@@ -4,7 +4,7 @@
 <div align='right'><font size=2 color='gray'>Python For BigData @ <font color='blue'><a href='https://www.facebook.com/jskim.kr'>FB / jskim.kr</a></font>, [김진수](bigpycraft@gmail.com)</font></div>
 <br>
 
-## SBA 2019, Seoul Business Agency Innovation Growth Intensive Training in Seoul IT
+## SBA 2019, Seoul Business Agency Innovation Growth Intensive Training
 
 <img src="./images/img_main_front.png">
 
