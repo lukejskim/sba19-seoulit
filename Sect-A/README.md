@@ -54,16 +54,49 @@
 [code-00]: #                                                   "Go Code-00"
 [code-01]: #                                                   "Go Code-01"
 [code-02]: #                                                   "Go Code-02"
-[code-03]: ./code/pb-03-intro.md                               "Go Code-03"
-[code-04]: ./code/pb-04-datatype.md                            "Go Code-04"
-[code-05]: ./code/pb-05-datastructure.md                       "Go Code-05"
-[code-06]: ./code/pb-06-control_ver3.md                        "Go Code-06"
-[code-07]: ./code/pb-07-practice_ver2.md                       "Go Code-07"
-[code-08]: ./code/pb-08-function.md                            "Go Code-08"
-[code-09]: ./code/pb-09-class_ver3.md                          "Go Code-09"
-[code-10]: ./code/pb-10-module.md                              "Go Code-10"
-[code-11]: ./code/pb-11-exceptions.md                          "Go Code-11"
+[code-03]: ./code/PYT_SECT03_rc1.md                            "Go Code-03"
+[code-04]: ./code/PYT_SECT04_rc1.md                            "Go Code-04"
+[code-05]: ./code/PYT_SECT05_rc1.md                            "Go Code-05"
+[code-06]: ./code/PYT_SECT06_rc1.md                            "Go Code-06"
+[code-07]: ./code/PYT_SECT07_rc1.md                            "Go Code-07"
+[code-07]: ./code/PYT_SECT07_rc3.md                            "Go Code-07"
+[code-08]: ./code/PYT_SECT08_rc1.md                            "Go Code-08"
+[code-09]: ./code/PYT_SECT09_rc1.md                            "Go Code-09"
+[code-09]: ./code/PYT_SECT09_rc3.md                            "Go Code-09"
+[code-10]: ./code/PYT_SECT10_rc1.md                            "Go Code-10"
+[code-11]: ./code/PYT_SECT11_rc1.md                            "Go Code-11"
+[code-13]: ./code/PYT_SECT13_rc1.md                            "Go Code-13"
 
+
+
+```python
+%ls source_md
+```
+
+     G 드라이브의 볼륨: Seagate Backup Plus Drive
+     볼륨 일련 번호: 8EB0-C512
+    
+     G:\sect_tech\sba19_seoulit\s10-programing-basics\source_md 디렉터리
+    
+    2019-08-15  오후 11:04    <DIR>          .
+    2019-08-15  오후 11:04    <DIR>          ..
+    2019-08-15  오후 10:04            12,129 PYT_SECT03_Std-IO.md
+    2019-08-15  오후 10:08             5,148 PYT_SECT04_DataType.md
+    2019-08-15  오후 10:09            11,637 PYT_SECT05_Data_Structure.md
+    2019-08-15  오후 10:11            14,452 PYT_SECT06_Control_Cmd_ver3.md
+    2019-08-15  오후 10:46            12,023 PYT_SECT07_Practice.md
+    2019-08-15  오후 10:32             9,068 PYT_SECT07_Practice_ver1.md
+    2019-08-15  오후 10:34            12,023 PYT_SECT07_Practice_ver3.md
+    2019-08-15  오후 10:44             9,368 PYT_SECT08_Function.md
+    2019-08-15  오후 10:51            15,972 PYT_SECT09_Class.md
+    2019-08-15  오후 10:48             6,057 PYT_SECT09_Class_ver1.md
+    2019-08-15  오후 11:02             1,947 PYT_SECT10_Module.md
+    2019-08-15  오후 11:02            10,726 PYT_SECT11_Exceptions.md
+    2019-08-15  오후 11:03            42,473 PYT_SECT13_DB_SQL.md
+    2019-08-15  오후 10:54    <DIR>          temp
+                  13개 파일             163,023 바이트
+                   3개 디렉터리  765,586,419,712 바이트 남음
+    
 
 <hr>
 <marquee><font size=3 color='brown'>The BigpyCraft find the information to design valuable society with Technology & Craft.</font></marquee>

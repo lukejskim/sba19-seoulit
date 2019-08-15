@@ -5,13 +5,14 @@
 <hr>
 
 ## <font color='brown'>실습 프로젝트, Practice Project</font>
-> 
+> 실습 프로젝트1
 - 구구단 출력하기
 - 총합과 팩토리얼 테이블 출력하기
 - 문자열 바꾸기 
 - 대소문자 변경
--실습 프로젝트, 
 - 도서 목록 입력 및 출력
+
+> 실습 프로젝트2 
 - 그래픽(Turtle Graphics) 출력하기
 - 모양 그리기, 다각형 그리기
 - 패턴을 찾아 모양을 그리기
@@ -294,6 +295,11 @@ reset
 
     Once deleted, variables cannot be recovered. Proceed (y/[n])? y
     
+
+
+```python
+
+```
 
 ### 모양 그리기
 > Hint : 대각선 길이를 구하는 제곱근 (Root Square)
