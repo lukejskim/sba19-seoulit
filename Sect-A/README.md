@@ -30,8 +30,9 @@
 - [[강의자료]][pyt-06]  [[소스코드]][code-06]  - P06.제어문                 
 - [[강의자료]][pyt-07]  [[소스코드]][code-07]  - P07.실습프로젝트            
 - [[강의자료]][pyt-08]  [[소스코드]][code-08]  - P08.함수                   
-- [[강의자료]][pyt-09]  [[소스코드]][code-09]  - P09.클래스                 
-- [[강의자료]][pyt-10]  [[소스코드]][code-10]  - P10.모듈&패키지            
+- [[강의자료]][pyt-09]  [[소스코드]][code-09]  - P09.클래스               
+- [[강의자료]][pyt-10]  [[소스코드]][code-10]  - T10.모듈&패키지                       
+- [[강의자료]][pyt-11]  [[소스코드]][code-11]  - T11.에러&예외처리         
 
 [pyt-00]: ./docu/P00_빅데이터사이언스_실무자양성과정_특강.pdf  "Go Pyt-00"
 [pyt-01]: ./docu/P01.파이썬소개.pdf                            "Go Pyt-01"
@@ -46,10 +47,7 @@
 [pyt-08]: ./docu/P08.함수.pdf                                  "Go Pyt-08"
 [pyt-09]: ./docu/P09.클래스.pdf                                "Go Pyt-09"
 [pyt-10]: ./docu/P10.모듈&패키지.pdf                           "Go Pyt-10"
-[pyt-11]: ./docu/P11.실습프로젝트II.pdf                        "Go Pyt-11"
-[pyt-12]: ./docu/P12.입출력&로깅.pdf                           "Go Pyt-12"
-[pyt-13]: ./docu/P13.에러&예외처리.pdf                         "Go Pyt-13"
-[pyt-14]: ./docu/P14.파이참_개발환경.pdf                       "Go Pyt-14"
+[pyt-11]: ./docu/P11.에러&예외처리.pdf                         "Go Pyt-11"
 
 [code-00]: #                                                   "Go Code-00"
 [code-01]: #                                                   "Go Code-01"
@@ -58,45 +56,12 @@
 [code-04]: ./code/PYT_SECT04_rc1.md                            "Go Code-04"
 [code-05]: ./code/PYT_SECT05_rc1.md                            "Go Code-05"
 [code-06]: ./code/PYT_SECT06_rc1.md                            "Go Code-06"
-[code-07]: ./code/PYT_SECT07_rc1.md                            "Go Code-07"
 [code-07]: ./code/PYT_SECT07_rc3.md                            "Go Code-07"
 [code-08]: ./code/PYT_SECT08_rc1.md                            "Go Code-08"
-[code-09]: ./code/PYT_SECT09_rc1.md                            "Go Code-09"
 [code-09]: ./code/PYT_SECT09_rc3.md                            "Go Code-09"
 [code-10]: ./code/PYT_SECT10_rc1.md                            "Go Code-10"
 [code-11]: ./code/PYT_SECT11_rc1.md                            "Go Code-11"
-[code-13]: ./code/PYT_SECT13_rc1.md                            "Go Code-13"
 
-
-
-```python
-%ls source_md
-```
-
-     G 드라이브의 볼륨: Seagate Backup Plus Drive
-     볼륨 일련 번호: 8EB0-C512
-    
-     G:\sect_tech\sba19_seoulit\s10-programing-basics\source_md 디렉터리
-    
-    2019-08-15  오후 11:04    <DIR>          .
-    2019-08-15  오후 11:04    <DIR>          ..
-    2019-08-15  오후 10:04            12,129 PYT_SECT03_Std-IO.md
-    2019-08-15  오후 10:08             5,148 PYT_SECT04_DataType.md
-    2019-08-15  오후 10:09            11,637 PYT_SECT05_Data_Structure.md
-    2019-08-15  오후 10:11            14,452 PYT_SECT06_Control_Cmd_ver3.md
-    2019-08-15  오후 10:46            12,023 PYT_SECT07_Practice.md
-    2019-08-15  오후 10:32             9,068 PYT_SECT07_Practice_ver1.md
-    2019-08-15  오후 10:34            12,023 PYT_SECT07_Practice_ver3.md
-    2019-08-15  오후 10:44             9,368 PYT_SECT08_Function.md
-    2019-08-15  오후 10:51            15,972 PYT_SECT09_Class.md
-    2019-08-15  오후 10:48             6,057 PYT_SECT09_Class_ver1.md
-    2019-08-15  오후 11:02             1,947 PYT_SECT10_Module.md
-    2019-08-15  오후 11:02            10,726 PYT_SECT11_Exceptions.md
-    2019-08-15  오후 11:03            42,473 PYT_SECT13_DB_SQL.md
-    2019-08-15  오후 10:54    <DIR>          temp
-                  13개 파일             163,023 바이트
-                   3개 디렉터리  765,586,419,712 바이트 남음
-    
 
 <hr>
 <marquee><font size=3 color='brown'>The BigpyCraft find the information to design valuable society with Technology & Craft.</font></marquee>
