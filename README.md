@@ -44,9 +44,9 @@
 <b> Latest: Python 3.7.4</b>
 <br/><br/>
 - Download : https://www.python.org/downloads/windows/
-<br/><br/>
+<br/>
 - Download the latest version 
-<br/><br/>
+<br/>
 - Check the OS version & bit (32bit / 64bit)
 </div></td>
     </tr>
@@ -70,13 +70,13 @@
 <b> Latest : Python 3.7 version | Release Date: July 24, 2019</b>
 <br/><br/>
 - Download : https://www.jetbrains.com/pycharm/download/
-<br/><br/>
+<br/>
 - Version: 2019.2
 <br/>
 - Build: 192.5728.105
 <br/>
 - July 24, 2019
-<br/><br/>
+<br/>
 - Download Community Version 
 </div></td>
     </tr>
