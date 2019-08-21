@@ -28,8 +28,9 @@
 - 2-5. [DateTIme1              ][A2051]
 - 2-5. [DateTIme2              ][A2052]
 - <font color='#CC0000'> [실습문제] 파이썬프로그래밍 실습3 </font> ─────▶ [[클릭]][p-ex3]<br/><br/>
-- 2-6. [Map, Filter, Reduce    ][A2052]
-- 2-6. [MFR Quiz               ][A2052]
+- 2-6. [Map, Filter, Reduce    ][A2101]
+- 2-6. [MFR Quiz2              ][A2112]
+- 2-6. [MFR Quiz3              ][A2113]
 - <font color='#CC0000'> [실습문제] 파이썬프로그래밍 실습4 </font> ─────▶ [[클릭]][p-ex4]<br/><br/>
 
 
