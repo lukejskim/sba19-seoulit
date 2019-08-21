@@ -2,7 +2,7 @@
 <html>
 <head><meta charset="utf-8" />
 
-<title>BPC_A205_DateTIme_ver1</title>
+<title>BPC_A211_MFR_ver3</title>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -13089,7 +13089,7 @@ div#notebook {
 
 <!-- Loading mathjax macro -->
 <!-- Load mathjax -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS_HTML"></script>
     <!-- MathJax configuration -->
     <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
@@ -13123,7 +13123,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><div align='right'><font size=2 color='gray'>Data Processing Based Python @ <font color='blue'><a href='https://www.facebook.com/jskim.kr'>FB / jskim.kr</a></font>, 김진수</font></div></p>
+<p><div align='right'><font size=2 color='gray'>Data Processing Based Python @ <font color='blue'><a href='https://www.facebook.com/jskim.kr'>FB / jskim.kr</a></font>, [김진수](bigpycraft@gmail.com)</font></div></p>
 <hr>
 </div>
 </div>
@@ -13131,14 +13131,25 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Date,-Time-"><font color="brown">Date, Time </font><a class="anchor-link" href="#Date,-Time-">&#182;</a></h1>
+<h3 id="&#49892;&#49845;.-Histogram-&#54632;&#49688;-&#51089;&#49457;&#54644;&#48372;&#44592;"><font color="blue">&#49892;&#49845;. Histogram &#54632;&#49688; &#51089;&#49457;&#54644;&#48372;&#44592;</font><a class="anchor-link" href="#&#49892;&#49845;.-Histogram-&#54632;&#49688;-&#51089;&#49457;&#54644;&#48372;&#44592;">&#182;</a></h3><blockquote><p>리스트를 받아서, 히스토그램을 그리는 함수</p>
+<ul>
+<li>입력값 : ["cat", "cat", "cat", "sheep", "sheep", "duck", "duck", "duck", "duck" ]</li>
+</ul>
+</blockquote>
+
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="&#49884;&#44036;-&#51221;&#48372;"><font color="blue">&#49884;&#44036; &#51221;&#48372;</font><a class="anchor-link" href="#&#49884;&#44036;-&#51221;&#48372;">&#182;</a></h3>
+<div class="highlight"><pre><span></span><span class="c1"># 1. 히스토그램을 그리는 함수 </span>
+  <span class="nb">input</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;cat&#39;</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span> <span class="s1">&#39;duck&#39;</span><span class="p">:</span> <span class="mi">4</span><span class="p">,</span> <span class="s1">&#39;sheep&#39;</span><span class="p">:</span> <span class="mi">2</span><span class="p">}</span> <span class="o">=&gt;</span> <span class="n">output</span> <span class="p">:</span> <span class="err">그림으로</span> <span class="err">나타낸다</span><span class="o">.</span>
+
+<span class="c1"># 2. 리스트를 받아서, 숫자를 세는 함수</span>
+  <span class="nb">input</span><span class="p">:</span> <span class="nb">list</span> <span class="o">=&gt;</span> <span class="n">output</span><span class="p">:</span> <span class="n">histogram</span> <span class="nb">dict</span>
+</pre></div>
+
 </div>
 </div>
 </div>
@@ -13147,21 +13158,9 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 현재 시간을 년-월-일 시:분:초로 출력하기(localtime, strftime)</span>
-<span class="kn">from</span> <span class="nn">time</span> <span class="k">import</span> <span class="n">localtime</span><span class="p">,</span> <span class="n">strftime</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">functools</span> <span class="k">import</span> <span class="o">*</span>
 
-<span class="k">def</span> <span class="nf">writelog</span><span class="p">(</span><span class="n">logfile</span><span class="p">,</span> <span class="n">log</span><span class="p">):</span>
-    <span class="n">time_stamp</span> <span class="o">=</span> <span class="n">strftime</span><span class="p">(</span><span class="s1">&#39;%Y-%m-</span><span class="si">%d</span><span class="s1"> </span><span class="si">%X</span><span class="se">\t</span><span class="s1">&#39;</span><span class="p">,</span> <span class="n">localtime</span><span class="p">())</span>
-    <span class="n">log</span> <span class="o">=</span> <span class="n">time_stamp</span> <span class="o">+</span> <span class="n">log</span> <span class="o">+</span> <span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span>
-
-    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">logfile</span><span class="p">,</span> <span class="s1">&#39;a&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
-        <span class="n">f</span><span class="o">.</span><span class="n">writelines</span><span class="p">(</span><span class="n">log</span><span class="p">)</span>
-
-<span class="n">logfile</span> <span class="o">=</span> <span class="s1">&#39;test.log&#39;</span>
-<span class="c1"># ! rm $logfile</span>
-<span class="o">!</span> del test.log 
-
-<span class="n">writelog</span><span class="p">(</span><span class="n">logfile</span><span class="p">,</span> <span class="s1">&#39;첫번째 로깅 문장입니다.&#39;</span><span class="p">)</span>
+<span class="n">data</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;cat&quot;</span><span class="p">,</span> <span class="s2">&quot;cat&quot;</span><span class="p">,</span> <span class="s2">&quot;cat&quot;</span><span class="p">,</span> <span class="s2">&quot;sheep&quot;</span><span class="p">,</span> <span class="s2">&quot;sheep&quot;</span><span class="p">,</span> <span class="s2">&quot;duck&quot;</span><span class="p">,</span> <span class="s2">&quot;duck&quot;</span><span class="p">,</span> <span class="s2">&quot;duck&quot;</span><span class="p">,</span> <span class="s2">&quot;duck&quot;</span> <span class="p">]</span>
 </pre></div>
 
     </div>
@@ -13174,8 +13173,15 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># ! cat $logfile</span>
-<span class="o">!</span> <span class="nb">type</span> test.log
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">result_dict</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;cat&#39;</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span> <span class="s1">&#39;duck&#39;</span><span class="p">:</span> <span class="mi">4</span><span class="p">,</span> <span class="s1">&#39;sheep&#39;</span><span class="p">:</span> <span class="mi">2</span><span class="p">}</span>
+<span class="n">result_hist</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
+<span class="s2">  cat    ===</span>
+<span class="s2">  sheep  ==</span>
+<span class="s2">  duck   ====</span>
+<span class="s2">&quot;&quot;&quot;</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">result_dict</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;-&#39;</span><span class="o">*</span><span class="mi">40</span><span class="p">,</span> <span class="n">result_hist</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -13192,7 +13198,12 @@ div#notebook {
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>2019-08-22 00:00:16	첫번째 로깅 문장입니다.
+<pre>{&#39;cat&#39;: 3, &#39;duck&#39;: 4, &#39;sheep&#39;: 2}
+---------------------------------------- 
+  cat    ===
+  sheep  ==
+  duck   ====
+
 </pre>
 </div>
 </div>
@@ -13200,44 +13211,33 @@ div#notebook {
 </div>
 </div>
 
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="#-&#44033;&#51088;-reduce&#47484;-&#54876;&#50857;&#54616;&#50668;--&#50500;&#47000;&#50752;-&#44057;&#51008;-Histogram&#51060;-&#52636;&#47141;&#46104;&#46020;&#47197;-&#54632;&#49688;&#47484;-&#44396;&#54788;&#54644;&#48372;&#49464;&#50836;-!!!"># &#44033;&#51088; reduce&#47484; &#54876;&#50857;&#54616;&#50668;  &#50500;&#47000;&#50752; &#44057;&#51008; Histogram&#51060; &#52636;&#47141;&#46104;&#46020;&#47197; &#54632;&#49688;&#47484; &#44396;&#54788;&#54644;&#48372;&#49464;&#50836; !!!<a class="anchor-link" href="##-&#44033;&#51088;-reduce&#47484;-&#54876;&#50857;&#54616;&#50668;--&#50500;&#47000;&#50752;-&#44057;&#51008;-Histogram&#51060;-&#52636;&#47141;&#46104;&#46020;&#47197;-&#54632;&#49688;&#47484;-&#44396;&#54788;&#54644;&#48372;&#49464;&#50836;-!!!">&#182;</a></h3>
+</div>
+</div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 올해 경과된 날짜수 계산하기(localtime)</span>
-<span class="kn">from</span> <span class="nn">time</span> <span class="k">import</span> <span class="n">localtime</span>
-
-<span class="n">t</span> <span class="o">=</span> <span class="n">localtime</span><span class="p">()</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">t</span><span class="p">)</span>
-
-<span class="n">start_day</span> <span class="o">=</span> <span class="s1">&#39;</span><span class="si">%d</span><span class="s1">-01-01&#39;</span> <span class="o">%</span> <span class="p">(</span><span class="n">t</span><span class="o">.</span><span class="n">tm_year</span><span class="p">)</span>
-<span class="n">elapsed_day</span> <span class="o">=</span> <span class="n">t</span><span class="o">.</span><span class="n">tm_yday</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;오늘은 [</span><span class="si">%s</span><span class="s1">]이후 [</span><span class="si">%d</span><span class="s1">]일째 되는 날입니다.&#39;</span> <span class="o">%</span><span class="p">(</span><span class="n">start_day</span><span class="p">,</span> <span class="n">elapsed_day</span><span class="p">))</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">get_count</span><span class="p">(</span><span class="n">result</span><span class="p">,</span> <span class="n">element</span><span class="p">):</span>
+    
+    <span class="k">if</span> <span class="n">result</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">element</span><span class="p">):</span>
+        <span class="n">result</span><span class="p">[</span><span class="n">element</span><span class="p">]</span> <span class="o">+=</span> <span class="mi">1</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">result</span><span class="p">[</span><span class="n">element</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
+    
+    <span class="c1"># check process</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">element</span><span class="p">,</span> <span class="s1">&#39;</span><span class="se">\t</span><span class="s1">:&#39;</span><span class="p">,</span> <span class="n">result</span><span class="p">)</span>
+    
+    <span class="k">return</span> <span class="n">result</span>
 </pre></div>
 
     </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>time.struct_time(tm_year=2019, tm_mon=8, tm_mday=22, tm_hour=0, tm_min=0, tm_sec=16, tm_wday=3, tm_yday=234, tm_isdst=0)
-오늘은 [2019-01-01]이후 [234]일째 되는 날입니다.
-</pre>
-</div>
-</div>
-
 </div>
 </div>
 
@@ -13247,12 +13247,13 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">today</span> <span class="o">=</span> <span class="s1">&#39;</span><span class="si">{yy}</span><span class="s1">-</span><span class="si">{mm}</span><span class="s1">-</span><span class="si">{dd}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span>
-    <span class="n">yy</span> <span class="o">=</span> <span class="n">t</span><span class="o">.</span><span class="n">tm_year</span><span class="p">,</span>
-    <span class="n">mm</span> <span class="o">=</span> <span class="n">t</span><span class="o">.</span><span class="n">tm_mon</span><span class="p">,</span>
-    <span class="n">dd</span> <span class="o">=</span> <span class="n">t</span><span class="o">.</span><span class="n">tm_mday</span><span class="p">,</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;result </span><span class="se">\t</span><span class="s1">:&#39;</span><span class="p">,</span> <span class="p">{},</span> <span class="s1">&#39;</span><span class="se">\n</span><span class="s1">--------------------------------------------&#39;</span><span class="p">)</span>
+
+<span class="n">reduce</span><span class="p">(</span>
+    <span class="n">get_count</span><span class="p">,</span>
+    <span class="n">data</span><span class="p">,</span>
+    <span class="p">{}</span>
 <span class="p">)</span>
-<span class="n">today</span>
 </pre></div>
 
     </div>
@@ -13265,13 +13266,34 @@ div#notebook {
 
 <div class="output_area">
 
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>result 	: {} 
+--------------------------------------------
+cat 	: {&#39;cat&#39;: 1}
+cat 	: {&#39;cat&#39;: 2}
+cat 	: {&#39;cat&#39;: 3}
+sheep 	: {&#39;cat&#39;: 3, &#39;sheep&#39;: 1}
+sheep 	: {&#39;cat&#39;: 3, &#39;sheep&#39;: 2}
+duck 	: {&#39;cat&#39;: 3, &#39;sheep&#39;: 2, &#39;duck&#39;: 1}
+duck 	: {&#39;cat&#39;: 3, &#39;sheep&#39;: 2, &#39;duck&#39;: 2}
+duck 	: {&#39;cat&#39;: 3, &#39;sheep&#39;: 2, &#39;duck&#39;: 3}
+duck 	: {&#39;cat&#39;: 3, &#39;sheep&#39;: 2, &#39;duck&#39;: 4}
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
     <div class="prompt output_prompt">Out[4]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&#39;2019-8-22&#39;</pre>
+<pre>{&#39;cat&#39;: 3, &#39;sheep&#39;: 2, &#39;duck&#39;: 4}</pre>
 </div>
 
 </div>
@@ -13285,35 +13307,39 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">today</span> <span class="o">=</span> <span class="s1">&#39;</span><span class="si">{yy}</span><span class="s1">-</span><span class="si">{mm}</span><span class="s1">-</span><span class="si">{dd}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span>
-    <span class="n">yy</span> <span class="o">=</span> <span class="n">t</span><span class="o">.</span><span class="n">tm_year</span><span class="p">,</span>
-    <span class="n">mm</span> <span class="o">=</span> <span class="n">t</span><span class="o">.</span><span class="n">tm_mon</span><span class="p">,</span>
-    <span class="n">dd</span> <span class="o">=</span> <span class="n">t</span><span class="o">.</span><span class="n">tm_mday</span><span class="p">,</span>
-<span class="p">)</span>
-<span class="n">today</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">get_histogram_dict</span><span class="p">(</span><span class="n">data</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">get_count</span><span class="p">(</span><span class="n">result</span><span class="p">,</span> <span class="n">element</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">result</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">element</span><span class="p">):</span>
+            <span class="n">result</span><span class="p">[</span><span class="n">element</span><span class="p">]</span> <span class="o">+=</span> <span class="mi">1</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">result</span><span class="p">[</span><span class="n">element</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
+        <span class="k">return</span> <span class="n">result</span>
+
+    <span class="k">return</span> <span class="n">reduce</span><span class="p">(</span>
+        <span class="n">get_count</span><span class="p">,</span>
+        <span class="n">data</span><span class="p">,</span>
+        <span class="p">{},</span>
+    <span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">print_histogram</span><span class="p">(</span><span class="n">histogram_dict</span><span class="p">):</span>    
+    <span class="n">rows</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">histogram_dict</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+        <span class="n">row</span> <span class="o">=</span> <span class="s2">&quot;</span><span class="si">{key}{spaces}{value_count}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span>
+            <span class="n">key</span>         <span class="o">=</span>  <span class="n">key</span><span class="p">,</span>
+            <span class="n">spaces</span>      <span class="o">=</span>  <span class="s2">&quot; &quot;</span> <span class="o">*</span> <span class="p">(</span><span class="mi">7</span> <span class="o">-</span> <span class="nb">len</span><span class="p">(</span><span class="n">key</span><span class="p">)),</span>
+            <span class="n">value_count</span> <span class="o">=</span>  <span class="s2">&quot;=&quot;</span> <span class="o">*</span> <span class="n">value</span><span class="p">,</span>
+        <span class="p">)</span>
+        <span class="n">rows</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">row</span><span class="p">)</span>
+        
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">rows</span><span class="p">))</span>
+    
+
+<span class="k">def</span> <span class="nf">draw_histogram</span><span class="p">(</span><span class="n">data</span><span class="p">):</span>
+    <span class="n">histogram_dict</span> <span class="o">=</span> <span class="n">get_histogram_dict</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+    <span class="n">print_histogram</span><span class="p">(</span><span class="n">histogram_dict</span><span class="p">)</span>
 </pre></div>
 
     </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[5]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>&#39;2019-8-22&#39;</pre>
-</div>
-
-</div>
-
 </div>
 </div>
 
@@ -13323,12 +13349,9 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">mem_day</span> <span class="o">=</span> <span class="s1">&#39;</span><span class="si">{yy}</span><span class="s1">-</span><span class="si">{mm}</span><span class="s1">-</span><span class="si">{dd}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span>
-    <span class="n">yy</span> <span class="o">=</span> <span class="mi">2002</span><span class="p">,</span>
-    <span class="n">mm</span> <span class="o">=</span> <span class="mi">3</span><span class="p">,</span>
-    <span class="n">dd</span> <span class="o">=</span> <span class="mi">2</span>
-<span class="p">)</span>
-<span class="n">mem_day</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;cat&quot;</span><span class="p">,</span> <span class="s2">&quot;cat&quot;</span><span class="p">,</span> <span class="s2">&quot;cat&quot;</span><span class="p">,</span> <span class="s2">&quot;sheep&quot;</span><span class="p">,</span> <span class="s2">&quot;sheep&quot;</span><span class="p">,</span> <span class="s2">&quot;duck&quot;</span><span class="p">,</span> <span class="s2">&quot;duck&quot;</span><span class="p">,</span> <span class="s2">&quot;duck&quot;</span><span class="p">,</span> <span class="s2">&quot;duck&quot;</span> <span class="p">]</span>
+<span class="n">histogram_dict</span> <span class="o">=</span> <span class="n">get_histogram_dict</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+<span class="n">histogram_dict</span>
 </pre></div>
 
     </div>
@@ -13347,7 +13370,7 @@ div#notebook {
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&#39;2002-3-2&#39;</pre>
+<pre>{&#39;cat&#39;: 3, &#39;sheep&#39;: 2, &#39;duck&#39;: 4}</pre>
 </div>
 
 </div>
@@ -13361,49 +13384,7 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">type</span><span class="p">(</span><span class="n">t</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[7]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>time.struct_time</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[8]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 오늘의 요일 계산하기(localtime)</span>
-<span class="kn">from</span> <span class="nn">time</span> <span class="k">import</span> <span class="n">localtime</span>
-
-<span class="n">weekdays</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;월요일&#39;</span><span class="p">,</span> <span class="s1">&#39;화요일&#39;</span><span class="p">,</span> <span class="s1">&#39;수요일&#39;</span><span class="p">,</span> <span class="s1">&#39;목요일&#39;</span><span class="p">,</span> <span class="s1">&#39;금요일&#39;</span><span class="p">,</span> <span class="s1">&#39;토요일&#39;</span><span class="p">,</span> <span class="s1">&#39;일요일&#39;</span><span class="p">]</span>
-
-<span class="n">t</span> <span class="o">=</span> <span class="n">localtime</span><span class="p">()</span>
-<span class="n">today</span> <span class="o">=</span> <span class="s1">&#39;</span><span class="si">%d</span><span class="s1">-</span><span class="si">%d</span><span class="s1">-</span><span class="si">%d</span><span class="s1">&#39;</span> <span class="o">%</span><span class="p">(</span><span class="n">t</span><span class="o">.</span><span class="n">tm_year</span><span class="p">,</span> <span class="n">t</span><span class="o">.</span><span class="n">tm_mon</span><span class="p">,</span> <span class="n">t</span><span class="o">.</span><span class="n">tm_mday</span><span class="p">)</span>
-<span class="n">week</span> <span class="o">=</span> <span class="n">weekdays</span><span class="p">[</span><span class="n">t</span><span class="o">.</span><span class="n">tm_wday</span><span class="p">]</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;[</span><span class="si">%s</span><span class="s1">] 오늘은 [</span><span class="si">%s</span><span class="s1">]입니다.&#39;</span> <span class="o">%</span><span class="p">(</span><span class="n">today</span><span class="p">,</span> <span class="n">week</span><span class="p">))</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">print_histogram</span><span class="p">(</span><span class="n">histogram_dict</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -13420,11 +13401,49 @@ div#notebook {
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>[2019-8-22] 오늘은 [목요일]입니다.
+<pre>cat    ===
+sheep  ==
+duck   ====
 </pre>
 </div>
 </div>
 
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="#-&#53804;&#54364;-&#44208;&#44284;-Random-Histogram-!!!"># &#53804;&#54364; &#44208;&#44284; Random Histogram !!!<a class="anchor-link" href="##-&#53804;&#54364;-&#44208;&#44284;-Random-Histogram-!!!">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">random</span> <span class="k">import</span> <span class="o">*</span>
+
+<span class="n">candidate</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;빨강생 후보&#39;</span><span class="p">,</span> <span class="s1">&#39;노랑색 후보&#39;</span><span class="p">,</span> <span class="s1">&#39;파랑색 후보&#39;</span><span class="p">,</span> <span class="s1">&#39;초록색 후보&#39;</span><span class="p">,</span> <span class="s1">&#39;하얀색 후보&#39;</span><span class="p">]</span>
+<span class="n">num_of_voters</span> <span class="o">=</span> <span class="mi">100</span>
+</pre></div>
+
+    </div>
 </div>
 </div>
 
@@ -13434,23 +13453,12 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 프로그램 실행 시간 계산하기(datetimenow)</span>
-<span class="kn">from</span> <span class="nn">datetime</span> <span class="k">import</span> <span class="n">datetime</span><span class="p">,</span> <span class="n">timedelta</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">voting_result</span> <span class="o">=</span> <span class="nb">list</span><span class="p">()</span>
+<span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">num_of_voters</span><span class="p">):</span>
+    <span class="n">c_num</span> <span class="o">=</span> <span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span>
+    <span class="n">voting_result</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">candidate</span><span class="p">[</span><span class="n">c_num</span><span class="p">])</span>
 
-<span class="n">start</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">()</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;1에서 백만까지 더합니다.&#39;</span><span class="p">)</span>
-
-<span class="n">ret</span> <span class="o">=</span> <span class="mi">0</span>
-<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1000000</span><span class="p">):</span>
-    <span class="n">ret</span> <span class="o">+=</span> <span class="n">i</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;1에서 백만까지 더한 결과: </span><span class="si">%d</span><span class="s1">&#39;</span> <span class="o">%</span><span class="k">ret</span>)
-<span class="n">end</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">()</span>
-
-<span class="n">elapsed</span> <span class="o">=</span> <span class="n">end</span> <span class="o">-</span> <span class="n">start</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;총 계산 시간: &#39;</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">);</span>   <span class="nb">print</span><span class="p">(</span><span class="n">elapsed</span><span class="p">)</span>
-<span class="n">elapsed_ms</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">elapsed</span><span class="o">.</span><span class="n">total_seconds</span><span class="p">()</span><span class="o">*</span><span class="mi">1000</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;총 계산 시간: </span><span class="si">%d</span><span class="s1">ms&#39;</span> <span class="o">%</span><span class="k">elapsed_ms</span>)
+<span class="n">draw_histogram</span><span class="p">(</span><span class="n">voting_result</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -13467,10 +13475,11 @@ div#notebook {
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>1에서 백만까지 더합니다.
-1에서 백만까지 더한 결과: 499999500000
-총 계산 시간: 0:00:00.165611
-총 계산 시간: 165ms
+<pre>하얀색 후보 ====================
+빨강생 후보 ===================
+노랑색 후보 =====================
+파랑색 후보 ====================
+초록색 후보 ====================
 </pre>
 </div>
 </div>
@@ -13481,33 +13490,13 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">type</span><span class="p">(</span><span class="n">start</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span> 
 </pre></div>
 
     </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[10]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>datetime.datetime</pre>
-</div>
-
-</div>
-
 </div>
 </div>
 
@@ -13515,55 +13504,55 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<div class="highlight"><pre><span></span><span class="c1"># datetime.datetime</span>
-<span class="n">datetime</span><span class="p">(</span><span class="n">year</span><span class="p">,</span> <span class="n">month</span><span class="p">,</span> <span class="n">day</span><span class="p">[,</span> <span class="n">hour</span><span class="p">[,</span> <span class="n">minute</span><span class="p">[,</span> <span class="n">second</span><span class="p">[,</span> <span class="n">microsecond</span><span class="p">[,</span><span class="n">tzinfo</span><span class="p">]]]]])</span>
-</pre></div>
-
+<h3 id="#-Refactoring-!!!"># Refactoring !!!<a class="anchor-link" href="##-Refactoring-!!!">&#182;</a></h3>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[11]:</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">datetime</span> <span class="k">import</span> <span class="n">datetime</span>
- 
-<span class="n">now</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">()</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">now</span><span class="p">)</span>          <span class="c1"># yyyy-MM-dd hh:mm:ss</span>
- 
-<span class="n">nowDate</span> <span class="o">=</span> <span class="n">now</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s1">&#39;%Y-%m-</span><span class="si">%d</span><span class="s1">&#39;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">nowDate</span><span class="p">)</span>      <span class="c1"># yyyy-MM-dd </span>
- 
-<span class="n">nowTime</span> <span class="o">=</span> <span class="n">now</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s1">&#39;%H:%M:%S&#39;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">nowTime</span><span class="p">)</span>      <span class="c1"># 1hh:mm:ss</span>
- 
-<span class="n">nowDatetime</span> <span class="o">=</span> <span class="n">now</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s1">&#39;%Y-%m-</span><span class="si">%d</span><span class="s1"> %H:%M:%S&#39;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">nowDatetime</span><span class="p">)</span>  <span class="c1"># yyyy-MM-dd hh:mm:ss</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">random</span> <span class="k">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">functools</span> <span class="k">import</span> <span class="o">*</span>
 </pre></div>
 
     </div>
 </div>
 </div>
 
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>2019-08-22 00:00:17.164404
-2019-08-22
-00:00:17
-2019-08-22 00:00:17
-</pre>
 </div>
-</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">cmd_histogram</span><span class="p">(</span><span class="n">data</span><span class="p">):</span>
+    
+    <span class="c1"># get_count = lambda result, key : { result[key] += 1 if result.get(key) else result[key] = 1 }</span>
+    <span class="c1"># get_count = lambda result, key : result[key]+1</span>
+    
+    <span class="k">def</span> <span class="nf">get_count</span><span class="p">(</span><span class="n">result</span><span class="p">,</span> <span class="n">key</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">result</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">key</span><span class="p">):</span> <span class="n">result</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="o">+=</span> <span class="mi">1</span> 
+        <span class="k">else</span><span class="p">:</span>               <span class="n">result</span><span class="p">[</span><span class="n">key</span><span class="p">]</span>  <span class="o">=</span> <span class="mi">1</span>
+        <span class="k">return</span> <span class="n">result</span>
 
+    <span class="n">result_dict</span> <span class="o">=</span> <span class="n">reduce</span><span class="p">(</span><span class="n">get_count</span><span class="p">,</span> <span class="n">data</span><span class="p">,</span> <span class="p">{})</span>
+    
+    <span class="k">for</span> <span class="n">k</span><span class="p">,</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">result_dict</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+        <span class="c1">#print(k, v)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">{k}</span><span class="s2"> </span><span class="si">{space}</span><span class="s2"> : </span><span class="si">{mark}</span><span class="s2"> </span><span class="si">{count}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span>
+            <span class="n">k</span> <span class="o">=</span> <span class="n">k</span><span class="p">,</span> 
+            <span class="n">space</span> <span class="o">=</span> <span class="p">(</span><span class="mi">7</span><span class="o">-</span><span class="nb">len</span><span class="p">(</span><span class="n">k</span><span class="p">))</span><span class="o">*</span><span class="s2">&quot; &quot;</span><span class="p">,</span>
+            <span class="n">mark</span>  <span class="o">=</span> <span class="n">v</span><span class="o">*</span><span class="s2">&quot;▒&quot;</span><span class="p">,</span>
+            <span class="n">count</span> <span class="o">=</span> <span class="n">v</span>
+        <span class="p">))</span>    
+    
+    <span class="k">return</span> <span class="n">result_dict</span>
+                
+</pre></div>
+
+    </div>
 </div>
 </div>
 
@@ -13573,321 +13562,16 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">type</span><span class="p">(</span><span class="n">now</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[12]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>datetime.datetime</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[13]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">m_day</span> <span class="o">=</span> <span class="n">datetime</span><span class="p">(</span><span class="mi">2002</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
-<span class="c1"># m_day = m_day.strftime(&#39;%Y-%m-%d&#39;)</span>
-<span class="n">m_day</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[13]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>datetime.datetime(2002, 3, 2, 0, 0)</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[14]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">today</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">()</span>
-<span class="n">today</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[14]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>datetime.datetime(2019, 8, 22, 0, 0, 17, 203430)</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[15]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">elapsed</span> <span class="o">=</span> <span class="n">today</span> <span class="o">-</span> <span class="n">m_day</span>
-<span class="n">elapsed</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[15]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>datetime.timedelta(days=6382, seconds=17, microseconds=203430)</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<div class="highlight"><pre><span></span><span class="c1"># timedelta에 들어갈 수 있는 인자값은 아래와 같다.</span>
-<span class="o">----------------------------------------------------------</span>
-<span class="err">–</span> <span class="mi">1</span><span class="err">주</span>   <span class="p">:</span> <span class="n">datetime</span><span class="o">.</span><span class="n">timedelta</span><span class="p">(</span><span class="n">weeks</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
-<span class="err">–</span> <span class="mi">1</span><span class="err">일</span>   <span class="p">:</span> <span class="n">datetime</span><span class="o">.</span><span class="n">timedelta</span><span class="p">(</span><span class="n">days</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
-<span class="err">–</span> <span class="mi">1</span><span class="err">시간</span> <span class="p">:</span> <span class="n">datetime</span><span class="o">.</span><span class="n">timedelta</span><span class="p">(</span><span class="n">hours</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
-<span class="err">–</span> <span class="mi">1</span><span class="err">분</span>   <span class="p">:</span> <span class="n">datetime</span><span class="o">.</span><span class="n">timedelta</span><span class="p">(</span><span class="n">minutes</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
-<span class="err">–</span> <span class="mi">1</span><span class="err">초</span>   <span class="p">:</span> <span class="n">datetime</span><span class="o">.</span><span class="n">timedelta</span><span class="p">(</span><span class="n">seconds</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
-<span class="err">–</span> <span class="mi">1</span><span class="err">밀리초</span> <span class="p">:</span> <span class="n">datetime</span><span class="o">.</span><span class="n">timedelta</span><span class="p">(</span><span class="n">milliseconds</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
-<span class="err">–</span> <span class="mi">1</span><span class="err">마이크로초</span> <span class="p">:</span> <span class="n">datetime</span><span class="o">.</span><span class="n">timedelta</span><span class="p">(</span><span class="n">microseconds</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[16]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">elapsed</span><span class="o">.</span><span class="n">days</span><span class="p">,</span> <span class="n">elapsed</span><span class="o">.</span><span class="n">seconds</span><span class="p">,</span> <span class="n">elapsed</span><span class="o">.</span><span class="n">microseconds</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[16]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>(6382, 17, 203430)</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[17]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">elapsed_day</span>   <span class="o">=</span> <span class="n">elapsed</span><span class="o">.</span><span class="n">days</span>
-<span class="n">elapsed_month</span> <span class="o">=</span> <span class="n">elapsed_day</span> <span class="o">/</span> <span class="mi">30</span>
-<span class="n">elapsed_year</span>  <span class="o">=</span> <span class="n">elapsed_day</span> <span class="o">/</span> <span class="mi">365</span>
-
-<span class="s1">&#39;러블리~ 우리 함께한지 벌써 </span><span class="si">{e_dd}</span><span class="s1">일이나 지났고, 월수는 </span><span class="si">{e_mm}</span><span class="s1">개월, 년수는 </span><span class="si">{e_yy}</span><span class="s1">년이 지났네~!!&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span>
-    <span class="n">e_dd</span> <span class="o">=</span> <span class="n">elapsed_day</span><span class="p">,</span>
-    <span class="n">e_mm</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">elapsed_month</span><span class="p">),</span>
-    <span class="n">e_yy</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">elapsed_year</span><span class="p">)</span>
-<span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[17]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>&#39;러블리~ 우리 함께한지 벌써 6382일이나 지났고, 월수는 212개월, 년수는 17년이 지났네~!!&#39;</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="&#48120;&#49496;,-&#44592;&#45392;&#51068;-&#44228;&#49328;"><font color="blue">&#48120;&#49496;, &#44592;&#45392;&#51068; &#44228;&#49328;</font><a class="anchor-link" href="#&#48120;&#49496;,-&#44592;&#45392;&#51068;-&#44228;&#49328;">&#182;</a></h3><blockquote><p>getMemorialDay(year, month, day, mem_day)</p>
-<ul>
-<li>특정기념일로 부터 얼마나 경과되었는지 알려주는 함수를 만드시오.</li>
-<li>경과일자가 1000일이 넘는경우, 천단위로 (,)를 붙혀서 출력해보기</li>
-<li>1234일 -&gt; 1,234일</li>
-</ul>
-</blockquote>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[18]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">datetime</span> <span class="k">import</span> <span class="n">datetime</span>
-
-<span class="k">def</span> <span class="nf">getMemorialDay</span><span class="p">(</span><span class="n">year</span><span class="p">,</span> <span class="n">month</span><span class="p">,</span> <span class="n">day</span><span class="p">,</span> <span class="n">mem_day</span><span class="o">=</span><span class="s1">&#39;기념일&#39;</span><span class="p">,</span> <span class="n">is_msg</span><span class="o">=</span><span class="kc">True</span><span class="p">):</span>
-    
-    <span class="k">pass</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<div class="highlight"><pre><span></span><span class="k">pass</span>
-</pre></div>
-<!--
-from datetime import datetime
-
-def getMemorialDay(year, month, day, mem_day='기념일', is_msg=True):
-    m_day = datetime(year, month, day)
-    today = datetime.now()
-    elapsed = today - m_day
-
-    elapsed_day   = elapsed.days
-    elapsed_month = int(elapsed_day / 30)
-    elapsed_year  = int(elapsed_day /365)
-
-    # print('check: ', type(elapsed_day), elapsed_day, getCommaSeperatedNumber(elapsed_day)) 
-
-    msg = '오늘은 "{mday}"로부터 {e_dd}일 경과되었고, 달 수로는 {e_mm}개월째, 연 수로는 {e_yy}년째 되었습니다!!'.format(
-        mday = mem_day,
-        e_dd = getCSN(elapsed_day),
-        # e_dd = elapsed_day,
-        e_mm = elapsed_month,
-        e_yy = elapsed_year
-    )
-    if is_msg: print(msg)
-
-    return elapsed_year, elapsed_month, elapsed_day
-
-
-def getCSN(num):
-    return getCommaSeperatedNumber(num)
-
-def getCommaSeperatedNumber(num):
-    num = str(num)
-    if num.isdigit():
-        num = num[::-1]
-        ret = ''
-        for i, c in enumerate(num):
-            i += 1
-            if i != len(num) and i%3 == 0:
-                ret += (c + ',')
-            else:
-                ret += c
-        ret = ret[::-1]
-        # print(ret)
-    else:
-        # print('입력한 내용 [%s]: 숫자가 아닙니다.' %num)
-        ret = None
-
-    return ret
--->
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[20]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">getMemorialDay</span><span class="p">(</span><span class="mi">2000</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;밀레니엄일&#39;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">data_count</span>  <span class="o">=</span> <span class="mi">500</span>
+<span class="n">animal_data</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;쥐&#39;</span><span class="p">,</span> <span class="s1">&#39;소&#39;</span><span class="p">,</span> <span class="s1">&#39;호랑이&#39;</span><span class="p">,</span> <span class="s1">&#39;토끼&#39;</span><span class="p">,</span> <span class="s1">&#39;용&#39;</span><span class="p">,</span> <span class="s1">&#39;뱀&#39;</span><span class="p">,</span> <span class="s1">&#39;말&#39;</span><span class="p">,</span> <span class="s1">&#39;양&#39;</span><span class="p">,</span> <span class="s1">&#39;원숭이&#39;</span><span class="p">,</span> <span class="s1">&#39;닭&#39;</span><span class="p">,</span> <span class="s1">&#39;개&#39;</span><span class="p">,</span> <span class="s1">&#39;돼지&#39;</span><span class="p">]</span>
+<span class="n">animal_data</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;mouse&#39;</span><span class="p">,</span> <span class="s1">&#39;cow&#39;</span><span class="p">,</span> <span class="s1">&#39;tiger&#39;</span><span class="p">,</span> <span class="s1">&#39;rabbit&#39;</span><span class="p">,</span> <span class="s1">&#39;dragon&#39;</span><span class="p">,</span> <span class="s1">&#39;snake&#39;</span><span class="p">,</span> <span class="s1">&#39;horse&#39;</span><span class="p">,</span> <span class="s1">&#39;sheep&#39;</span><span class="p">,</span> <span class="s1">&#39;monkey&#39;</span><span class="p">,</span> <span class="s1">&#39;chiken&#39;</span><span class="p">,</span> <span class="s1">&#39;dog&#39;</span><span class="p">,</span> <span class="s1">&#39;pig&#39;</span><span class="p">]</span>
+
+<span class="n">gen_data</span> <span class="o">=</span> <span class="nb">list</span><span class="p">()</span>
+<span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">data_count</span><span class="p">):</span>
+    <span class="n">c_num</span> <span class="o">=</span> <span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">animal_data</span><span class="p">)</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+    <span class="n">gen_data</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">animal_data</span><span class="p">[</span><span class="n">c_num</span><span class="p">])</span>
+
+<span class="n">result_dict</span> <span class="o">=</span> <span class="n">cmd_histogram</span><span class="p">(</span><span class="n">gen_data</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -13904,100 +13588,20 @@ def getCommaSeperatedNumber(num):
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>오늘은 &#34;밀레니엄일&#34;로부터 7,173일 경과되었고, 달 수로는 239개월째, 연 수로는 19년째 되었습니다!!
+<pre>chiken   : ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒ 37
+sheep    : ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒ 46
+pig      : ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒ 36
+mouse    : ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒ 42
+dragon   : ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒ 39
+monkey   : ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒ 53
+tiger    : ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒ 29
+horse    : ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒ 32
+snake    : ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒ 44
+rabbit   : ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒ 42
+cow      : ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒ 51
+dog      : ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒ 49
 </pre>
 </div>
-</div>
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[20]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>(19, 239, 7173)</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[21]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">getMemorialDay</span><span class="p">(</span><span class="mi">2014</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">16</span><span class="p">,</span> <span class="s1">&#39;세월호침몰사고일&#39;</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>오늘은 &#34;세월호침몰사고일&#34;로부터 1,954일 경과되었고, 달 수로는 65개월째, 연 수로는 5년째 되었습니다!!
-</pre>
-</div>
-</div>
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[21]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>(5, 65, 1954)</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[22]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">_y</span><span class="p">,</span> <span class="n">_m</span><span class="p">,</span> <span class="n">elapsed_day</span> <span class="o">=</span> <span class="n">getMemorialDay</span><span class="p">(</span><span class="mi">2019</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">25</span><span class="p">,</span> <span class="s1">&#39;크리스마스&#39;</span><span class="p">,</span> <span class="kc">False</span><span class="p">)</span>
-<span class="s1">&#39;크리스마스까지는 </span><span class="si">%d</span><span class="s1">일 남았습니다!!&#39;</span> <span class="o">%</span> <span class="o">-</span><span class="n">elapsed_day</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[22]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>&#39;크리스마스까지는 125일 남았습니다!!&#39;</pre>
-</div>
-
 </div>
 
 </div>

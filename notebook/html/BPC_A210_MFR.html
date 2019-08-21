@@ -2,7 +2,7 @@
 <html>
 <head><meta charset="utf-8" />
 
-<title>BPC_A205_DateTIme_ver1</title>
+<title>BPC_A210_MFR</title>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -13089,7 +13089,7 @@ div#notebook {
 
 <!-- Loading mathjax macro -->
 <!-- Load mathjax -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS_HTML"></script>
     <!-- MathJax configuration -->
     <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
@@ -13123,7 +13123,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><div align='right'><font size=2 color='gray'>Data Processing Based Python @ <font color='blue'><a href='https://www.facebook.com/jskim.kr'>FB / jskim.kr</a></font>, 김진수</font></div></p>
+<p><div align='right'><font size=2 color='gray'>Data Processing Based Python @ <font color='blue'><a href='https://www.facebook.com/jskim.kr'>FB / jskim.kr</a></font>, [김진수](bigpycraft@gmail.com)</font></div></p>
 <hr>
 </div>
 </div>
@@ -13131,14 +13131,14 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Date,-Time-"><font color="brown">Date, Time </font><a class="anchor-link" href="#Date,-Time-">&#182;</a></h1>
+<h2 id="Lambda-Operator">Lambda Operator<a class="anchor-link" href="#Lambda-Operator">&#182;</a></h2>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="&#49884;&#44036;-&#51221;&#48372;"><font color="blue">&#49884;&#44036; &#51221;&#48372;</font><a class="anchor-link" href="#&#49884;&#44036;-&#51221;&#48372;">&#182;</a></h3>
+<h3 id="&#51068;&#48152;-&#54632;&#49688;"><font color="blue">&#51068;&#48152; &#54632;&#49688;</font><a class="anchor-link" href="#&#51068;&#48152;-&#54632;&#49688;">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -13147,21 +13147,8 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 현재 시간을 년-월-일 시:분:초로 출력하기(localtime, strftime)</span>
-<span class="kn">from</span> <span class="nn">time</span> <span class="k">import</span> <span class="n">localtime</span><span class="p">,</span> <span class="n">strftime</span>
-
-<span class="k">def</span> <span class="nf">writelog</span><span class="p">(</span><span class="n">logfile</span><span class="p">,</span> <span class="n">log</span><span class="p">):</span>
-    <span class="n">time_stamp</span> <span class="o">=</span> <span class="n">strftime</span><span class="p">(</span><span class="s1">&#39;%Y-%m-</span><span class="si">%d</span><span class="s1"> </span><span class="si">%X</span><span class="se">\t</span><span class="s1">&#39;</span><span class="p">,</span> <span class="n">localtime</span><span class="p">())</span>
-    <span class="n">log</span> <span class="o">=</span> <span class="n">time_stamp</span> <span class="o">+</span> <span class="n">log</span> <span class="o">+</span> <span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span>
-
-    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">logfile</span><span class="p">,</span> <span class="s1">&#39;a&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
-        <span class="n">f</span><span class="o">.</span><span class="n">writelines</span><span class="p">(</span><span class="n">log</span><span class="p">)</span>
-
-<span class="n">logfile</span> <span class="o">=</span> <span class="s1">&#39;test.log&#39;</span>
-<span class="c1"># ! rm $logfile</span>
-<span class="o">!</span> del test.log 
-
-<span class="n">writelog</span><span class="p">(</span><span class="n">logfile</span><span class="p">,</span> <span class="s1">&#39;첫번째 로깅 문장입니다.&#39;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">hello</span><span class="p">():</span>
+    <span class="k">return</span> <span class="s2">&quot;Hey guys, Let&#39;s get it !&quot;</span>
 </pre></div>
 
     </div>
@@ -13174,8 +13161,7 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># ! cat $logfile</span>
-<span class="o">!</span> <span class="nb">type</span> test.log
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">hello</span><span class="p">()</span>
 </pre></div>
 
     </div>
@@ -13188,13 +13174,15 @@ div#notebook {
 
 <div class="output_area">
 
-    <div class="prompt"></div>
+    <div class="prompt output_prompt">Out[2]:</div>
 
 
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>2019-08-22 00:00:16	첫번째 로깅 문장입니다.
-</pre>
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>&#34;Hey guys, Let&#39;s get it !&#34;</pre>
 </div>
+
 </div>
 
 </div>
@@ -13206,38 +13194,11 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 올해 경과된 날짜수 계산하기(localtime)</span>
-<span class="kn">from</span> <span class="nn">time</span> <span class="k">import</span> <span class="n">localtime</span>
-
-<span class="n">t</span> <span class="o">=</span> <span class="n">localtime</span><span class="p">()</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">t</span><span class="p">)</span>
-
-<span class="n">start_day</span> <span class="o">=</span> <span class="s1">&#39;</span><span class="si">%d</span><span class="s1">-01-01&#39;</span> <span class="o">%</span> <span class="p">(</span><span class="n">t</span><span class="o">.</span><span class="n">tm_year</span><span class="p">)</span>
-<span class="n">elapsed_day</span> <span class="o">=</span> <span class="n">t</span><span class="o">.</span><span class="n">tm_yday</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;오늘은 [</span><span class="si">%s</span><span class="s1">]이후 [</span><span class="si">%d</span><span class="s1">]일째 되는 날입니다.&#39;</span> <span class="o">%</span><span class="p">(</span><span class="n">start_day</span><span class="p">,</span> <span class="n">elapsed_day</span><span class="p">))</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">double</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">x</span> <span class="o">*</span> <span class="mi">2</span>
 </pre></div>
 
     </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>time.struct_time(tm_year=2019, tm_mon=8, tm_mday=22, tm_hour=0, tm_min=0, tm_sec=16, tm_wday=3, tm_yday=234, tm_isdst=0)
-오늘은 [2019-01-01]이후 [234]일째 되는 날입니다.
-</pre>
-</div>
-</div>
-
 </div>
 </div>
 
@@ -13247,12 +13208,7 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">today</span> <span class="o">=</span> <span class="s1">&#39;</span><span class="si">{yy}</span><span class="s1">-</span><span class="si">{mm}</span><span class="s1">-</span><span class="si">{dd}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span>
-    <span class="n">yy</span> <span class="o">=</span> <span class="n">t</span><span class="o">.</span><span class="n">tm_year</span><span class="p">,</span>
-    <span class="n">mm</span> <span class="o">=</span> <span class="n">t</span><span class="o">.</span><span class="n">tm_mon</span><span class="p">,</span>
-    <span class="n">dd</span> <span class="o">=</span> <span class="n">t</span><span class="o">.</span><span class="n">tm_mday</span><span class="p">,</span>
-<span class="p">)</span>
-<span class="n">today</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">double</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -13271,7 +13227,7 @@ div#notebook {
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&#39;2019-8-22&#39;</pre>
+<pre>200</pre>
 </div>
 
 </div>
@@ -13279,18 +13235,20 @@ div#notebook {
 </div>
 </div>
 
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="&#46988;&#45796;-&#54632;&#49688;"><font color="blue">&#46988;&#45796; &#54632;&#49688;</font><a class="anchor-link" href="#&#46988;&#45796;-&#54632;&#49688;">&#182;</a></h3>
+</div>
+</div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">today</span> <span class="o">=</span> <span class="s1">&#39;</span><span class="si">{yy}</span><span class="s1">-</span><span class="si">{mm}</span><span class="s1">-</span><span class="si">{dd}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span>
-    <span class="n">yy</span> <span class="o">=</span> <span class="n">t</span><span class="o">.</span><span class="n">tm_year</span><span class="p">,</span>
-    <span class="n">mm</span> <span class="o">=</span> <span class="n">t</span><span class="o">.</span><span class="n">tm_mon</span><span class="p">,</span>
-    <span class="n">dd</span> <span class="o">=</span> <span class="n">t</span><span class="o">.</span><span class="n">tm_mday</span><span class="p">,</span>
-<span class="p">)</span>
-<span class="n">today</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span> <span class="o">*</span> <span class="mi">2</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -13309,7 +13267,7 @@ div#notebook {
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&#39;2019-8-22&#39;</pre>
+<pre>&lt;function __main__.&lt;lambda&gt;&gt;</pre>
 </div>
 
 </div>
@@ -13323,12 +13281,7 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">mem_day</span> <span class="o">=</span> <span class="s1">&#39;</span><span class="si">{yy}</span><span class="s1">-</span><span class="si">{mm}</span><span class="s1">-</span><span class="si">{dd}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span>
-    <span class="n">yy</span> <span class="o">=</span> <span class="mi">2002</span><span class="p">,</span>
-    <span class="n">mm</span> <span class="o">=</span> <span class="mi">3</span><span class="p">,</span>
-    <span class="n">dd</span> <span class="o">=</span> <span class="mi">2</span>
-<span class="p">)</span>
-<span class="n">mem_day</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span> <span class="o">*</span> <span class="mi">2</span><span class="p">)(</span><span class="mi">200</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -13347,7 +13300,7 @@ div#notebook {
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&#39;2002-3-2&#39;</pre>
+<pre>400</pre>
 </div>
 
 </div>
@@ -13361,30 +13314,11 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">type</span><span class="p">(</span><span class="n">t</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 익명 함수를 만들어서, 그 위치를 double2 이라는 변수에 저장</span>
+<span class="n">double2</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span> <span class="o">*</span> <span class="mi">2</span>
 </pre></div>
 
     </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[7]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>time.struct_time</pre>
-</div>
-
-</div>
-
 </div>
 </div>
 
@@ -13394,16 +13328,7 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 오늘의 요일 계산하기(localtime)</span>
-<span class="kn">from</span> <span class="nn">time</span> <span class="k">import</span> <span class="n">localtime</span>
-
-<span class="n">weekdays</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;월요일&#39;</span><span class="p">,</span> <span class="s1">&#39;화요일&#39;</span><span class="p">,</span> <span class="s1">&#39;수요일&#39;</span><span class="p">,</span> <span class="s1">&#39;목요일&#39;</span><span class="p">,</span> <span class="s1">&#39;금요일&#39;</span><span class="p">,</span> <span class="s1">&#39;토요일&#39;</span><span class="p">,</span> <span class="s1">&#39;일요일&#39;</span><span class="p">]</span>
-
-<span class="n">t</span> <span class="o">=</span> <span class="n">localtime</span><span class="p">()</span>
-<span class="n">today</span> <span class="o">=</span> <span class="s1">&#39;</span><span class="si">%d</span><span class="s1">-</span><span class="si">%d</span><span class="s1">-</span><span class="si">%d</span><span class="s1">&#39;</span> <span class="o">%</span><span class="p">(</span><span class="n">t</span><span class="o">.</span><span class="n">tm_year</span><span class="p">,</span> <span class="n">t</span><span class="o">.</span><span class="n">tm_mon</span><span class="p">,</span> <span class="n">t</span><span class="o">.</span><span class="n">tm_mday</span><span class="p">)</span>
-<span class="n">week</span> <span class="o">=</span> <span class="n">weekdays</span><span class="p">[</span><span class="n">t</span><span class="o">.</span><span class="n">tm_wday</span><span class="p">]</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;[</span><span class="si">%s</span><span class="s1">] 오늘은 [</span><span class="si">%s</span><span class="s1">]입니다.&#39;</span> <span class="o">%</span><span class="p">(</span><span class="n">today</span><span class="p">,</span> <span class="n">week</span><span class="p">))</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">double2</span><span class="p">(</span><span class="mi">300</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -13416,13 +13341,15 @@ div#notebook {
 
 <div class="output_area">
 
-    <div class="prompt"></div>
+    <div class="prompt output_prompt">Out[8]:</div>
 
 
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>[2019-8-22] 오늘은 [목요일]입니다.
-</pre>
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>600</pre>
 </div>
+
 </div>
 
 </div>
@@ -13434,23 +13361,7 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 프로그램 실행 시간 계산하기(datetimenow)</span>
-<span class="kn">from</span> <span class="nn">datetime</span> <span class="k">import</span> <span class="n">datetime</span><span class="p">,</span> <span class="n">timedelta</span>
-
-<span class="n">start</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">()</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;1에서 백만까지 더합니다.&#39;</span><span class="p">)</span>
-
-<span class="n">ret</span> <span class="o">=</span> <span class="mi">0</span>
-<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1000000</span><span class="p">):</span>
-    <span class="n">ret</span> <span class="o">+=</span> <span class="n">i</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;1에서 백만까지 더한 결과: </span><span class="si">%d</span><span class="s1">&#39;</span> <span class="o">%</span><span class="k">ret</span>)
-<span class="n">end</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">()</span>
-
-<span class="n">elapsed</span> <span class="o">=</span> <span class="n">end</span> <span class="o">-</span> <span class="n">start</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;총 계산 시간: &#39;</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">);</span>   <span class="nb">print</span><span class="p">(</span><span class="n">elapsed</span><span class="p">)</span>
-<span class="n">elapsed_ms</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">elapsed</span><span class="o">.</span><span class="n">total_seconds</span><span class="p">()</span><span class="o">*</span><span class="mi">1000</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;총 계산 시간: </span><span class="si">%d</span><span class="s1">ms&#39;</span> <span class="o">%</span><span class="k">elapsed_ms</span>)
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">double2</span>    
 </pre></div>
 
     </div>
@@ -13463,47 +13374,13 @@ div#notebook {
 
 <div class="output_area">
 
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>1에서 백만까지 더합니다.
-1에서 백만까지 더한 결과: 499999500000
-총 계산 시간: 0:00:00.165611
-총 계산 시간: 165ms
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[10]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">type</span><span class="p">(</span><span class="n">start</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[10]:</div>
+    <div class="prompt output_prompt">Out[9]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>datetime.datetime</pre>
+<pre>&lt;function __main__.&lt;lambda&gt;&gt;</pre>
 </div>
 
 </div>
@@ -13515,31 +13392,53 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<div class="highlight"><pre><span></span><span class="c1"># datetime.datetime</span>
-<span class="n">datetime</span><span class="p">(</span><span class="n">year</span><span class="p">,</span> <span class="n">month</span><span class="p">,</span> <span class="n">day</span><span class="p">[,</span> <span class="n">hour</span><span class="p">[,</span> <span class="n">minute</span><span class="p">[,</span> <span class="n">second</span><span class="p">[,</span> <span class="n">microsecond</span><span class="p">[,</span><span class="n">tzinfo</span><span class="p">]]]]])</span>
-</pre></div>
+<h3 id="Missions"><font color="brown">Missions</font><a class="anchor-link" href="#Missions">&#182;</a></h3><blockquote><p>
+미션1 : 리스트를 받아서, 제곱수의 리스트</p>
+<ul>
+<li><p>Input: 1부터 10까지의 자연수 ⇒ Output : [ 1, 4, 9, ..., 100 ]</p>
+<p>미션2 : 리스트를 받아서, 양수인 element 만 새로운 리스트</p>
+</li>
+<li>Input: [1, -2, 3, -4, 5] ⇒ Output : [1, 3, 5]</li>
+</ul>
+</blockquote>
 
 </div>
 </div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="&#48120;&#49496;1"><font color="blue">&#48120;&#49496;1</font><a class="anchor-link" href="#&#48120;&#49496;1">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">get_square</span><span class="p">(</span><span class="n">number</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">number</span> <span class="o">**</span> <span class="mi">2</span>
+
+<span class="k">def</span> <span class="nf">get_square_list</span><span class="p">(</span><span class="n">numbers</span><span class="p">):</span>
+    <span class="n">elements</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">number</span> <span class="ow">in</span> <span class="n">numbers</span><span class="p">:</span>
+        <span class="n">elements</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">get_square</span><span class="p">(</span><span class="n">number</span><span class="p">))</span>
+    <span class="k">return</span> <span class="n">elements</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">datetime</span> <span class="k">import</span> <span class="n">datetime</span>
- 
-<span class="n">now</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">()</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">now</span><span class="p">)</span>          <span class="c1"># yyyy-MM-dd hh:mm:ss</span>
- 
-<span class="n">nowDate</span> <span class="o">=</span> <span class="n">now</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s1">&#39;%Y-%m-</span><span class="si">%d</span><span class="s1">&#39;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">nowDate</span><span class="p">)</span>      <span class="c1"># yyyy-MM-dd </span>
- 
-<span class="n">nowTime</span> <span class="o">=</span> <span class="n">now</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s1">&#39;%H:%M:%S&#39;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">nowTime</span><span class="p">)</span>      <span class="c1"># 1hh:mm:ss</span>
- 
-<span class="n">nowDatetime</span> <span class="o">=</span> <span class="n">now</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s1">&#39;%Y-%m-</span><span class="si">%d</span><span class="s1"> %H:%M:%S&#39;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">nowDatetime</span><span class="p">)</span>  <span class="c1"># yyyy-MM-dd hh:mm:ss</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">numbers</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">11</span><span class="p">))</span>
+<span class="n">get_square_list</span><span class="p">(</span><span class="n">numbers</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -13552,51 +13451,42 @@ div#notebook {
 
 <div class="output_area">
 
-    <div class="prompt"></div>
+    <div class="prompt output_prompt">Out[11]:</div>
 
 
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>2019-08-22 00:00:17.164404
-2019-08-22
-00:00:17
-2019-08-22 00:00:17
-</pre>
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>[1, 4, 9, 16, 25, 36, 49, 64, 81, 100]</pre>
+</div>
+
+</div>
+
 </div>
 </div>
 
 </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="&#48120;&#49496;2"><font color="blue">&#48120;&#49496;2</font><a class="anchor-link" href="#&#48120;&#49496;2">&#182;</a></h3>
 </div>
-
+</div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">type</span><span class="p">(</span><span class="n">now</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">get_positive_list</span><span class="p">(</span><span class="n">numbers</span><span class="p">):</span>
+    <span class="n">elements</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">number</span> <span class="ow">in</span> <span class="n">numbers</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">number</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="n">elements</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">number</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">elements</span>    
 </pre></div>
 
     </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[12]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>datetime.datetime</pre>
-</div>
-
-</div>
-
 </div>
 </div>
 
@@ -13606,9 +13496,8 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">m_day</span> <span class="o">=</span> <span class="n">datetime</span><span class="p">(</span><span class="mi">2002</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
-<span class="c1"># m_day = m_day.strftime(&#39;%Y-%m-%d&#39;)</span>
-<span class="n">m_day</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">numbers</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="o">-</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
+<span class="n">get_positive_list</span><span class="p">(</span><span class="n">numbers</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -13627,7 +13516,7 @@ div#notebook {
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>datetime.datetime(2002, 3, 2, 0, 0)</pre>
+<pre>[1, 3, 5]</pre>
 </div>
 
 </div>
@@ -13635,48 +13524,50 @@ div#notebook {
 </div>
 </div>
 
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Map,-Filter,-Reduce">Map, Filter, Reduce<a class="anchor-link" href="#Map,-Filter,-Reduce">&#182;</a></h1>
+</div>
+</div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[14]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">today</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">()</span>
-<span class="n">today</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">functools</span> <span class="k">import</span> <span class="o">*</span>
 </pre></div>
 
     </div>
 </div>
 </div>
 
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[14]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>datetime.datetime(2019, 8, 22, 0, 0, 17, 203430)</pre>
 </div>
-
-</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="map"><font color="blue">map</font><a class="anchor-link" href="#map">&#182;</a></h3><blockquote><p></p>
+<ul>
+<li>입력값과 출력값이 1:1로 맵핑된다.</li>
+<li>즉, 한번만에 즉시 연산</li>
+<li>cf. generator =&gt; 한번에 연산 X</li>
+</ul>
+</blockquote>
 
 </div>
 </div>
-
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[15]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">elapsed</span> <span class="o">=</span> <span class="n">today</span> <span class="o">-</span> <span class="n">m_day</span>
-<span class="n">elapsed</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">list</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span>  
+    <span class="n">get_square</span><span class="p">,</span>         
+    <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">],</span>
+<span class="p">))</span>
 </pre></div>
 
     </div>
@@ -13695,7 +13586,7 @@ div#notebook {
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>datetime.timedelta(days=6382, seconds=17, microseconds=203430)</pre>
+<pre>[1, 4, 9, 16, 25]</pre>
 </div>
 
 </div>
@@ -13703,30 +13594,16 @@ div#notebook {
 </div>
 </div>
 
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<div class="highlight"><pre><span></span><span class="c1"># timedelta에 들어갈 수 있는 인자값은 아래와 같다.</span>
-<span class="o">----------------------------------------------------------</span>
-<span class="err">–</span> <span class="mi">1</span><span class="err">주</span>   <span class="p">:</span> <span class="n">datetime</span><span class="o">.</span><span class="n">timedelta</span><span class="p">(</span><span class="n">weeks</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
-<span class="err">–</span> <span class="mi">1</span><span class="err">일</span>   <span class="p">:</span> <span class="n">datetime</span><span class="o">.</span><span class="n">timedelta</span><span class="p">(</span><span class="n">days</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
-<span class="err">–</span> <span class="mi">1</span><span class="err">시간</span> <span class="p">:</span> <span class="n">datetime</span><span class="o">.</span><span class="n">timedelta</span><span class="p">(</span><span class="n">hours</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
-<span class="err">–</span> <span class="mi">1</span><span class="err">분</span>   <span class="p">:</span> <span class="n">datetime</span><span class="o">.</span><span class="n">timedelta</span><span class="p">(</span><span class="n">minutes</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
-<span class="err">–</span> <span class="mi">1</span><span class="err">초</span>   <span class="p">:</span> <span class="n">datetime</span><span class="o">.</span><span class="n">timedelta</span><span class="p">(</span><span class="n">seconds</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
-<span class="err">–</span> <span class="mi">1</span><span class="err">밀리초</span> <span class="p">:</span> <span class="n">datetime</span><span class="o">.</span><span class="n">timedelta</span><span class="p">(</span><span class="n">milliseconds</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
-<span class="err">–</span> <span class="mi">1</span><span class="err">마이크로초</span> <span class="p">:</span> <span class="n">datetime</span><span class="o">.</span><span class="n">timedelta</span><span class="p">(</span><span class="n">microseconds</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
-</pre></div>
-
-</div>
-</div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[16]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">elapsed</span><span class="o">.</span><span class="n">days</span><span class="p">,</span> <span class="n">elapsed</span><span class="o">.</span><span class="n">seconds</span><span class="p">,</span> <span class="n">elapsed</span><span class="o">.</span><span class="n">microseconds</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">list</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span>
+    <span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span> <span class="o">**</span> <span class="mi">2</span><span class="p">,</span>
+    <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
+<span class="p">))</span>
 </pre></div>
 
     </div>
@@ -13745,7 +13622,7 @@ div#notebook {
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>(6382, 17, 203430)</pre>
+<pre>[1, 4, 9, 16, 25]</pre>
 </div>
 
 </div>
@@ -13759,15 +13636,10 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[17]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">elapsed_day</span>   <span class="o">=</span> <span class="n">elapsed</span><span class="o">.</span><span class="n">days</span>
-<span class="n">elapsed_month</span> <span class="o">=</span> <span class="n">elapsed_day</span> <span class="o">/</span> <span class="mi">30</span>
-<span class="n">elapsed_year</span>  <span class="o">=</span> <span class="n">elapsed_day</span> <span class="o">/</span> <span class="mi">365</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">get_square_list</span><span class="p">(</span><span class="n">numbers</span><span class="p">):</span>
+    <span class="k">return</span> <span class="nb">list</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span> <span class="o">**</span> <span class="mi">2</span><span class="p">,</span> <span class="n">numbers</span><span class="p">))</span>
 
-<span class="s1">&#39;러블리~ 우리 함께한지 벌써 </span><span class="si">{e_dd}</span><span class="s1">일이나 지났고, 월수는 </span><span class="si">{e_mm}</span><span class="s1">개월, 년수는 </span><span class="si">{e_yy}</span><span class="s1">년이 지났네~!!&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span>
-    <span class="n">e_dd</span> <span class="o">=</span> <span class="n">elapsed_day</span><span class="p">,</span>
-    <span class="n">e_mm</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">elapsed_month</span><span class="p">),</span>
-    <span class="n">e_yy</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">elapsed_year</span><span class="p">)</span>
-<span class="p">)</span>
+<span class="n">get_square_list</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">])</span>
 </pre></div>
 
     </div>
@@ -13786,7 +13658,7 @@ div#notebook {
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&#39;러블리~ 우리 함께한지 벌써 6382일이나 지났고, 월수는 212개월, 년수는 17년이 지났네~!!&#39;</pre>
+<pre>[1, 4, 9, 16, 25]</pre>
 </div>
 
 </div>
@@ -13798,11 +13670,10 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="&#48120;&#49496;,-&#44592;&#45392;&#51068;-&#44228;&#49328;"><font color="blue">&#48120;&#49496;, &#44592;&#45392;&#51068; &#44228;&#49328;</font><a class="anchor-link" href="#&#48120;&#49496;,-&#44592;&#45392;&#51068;-&#44228;&#49328;">&#182;</a></h3><blockquote><p>getMemorialDay(year, month, day, mem_day)</p>
+<h3 id="filter"><font color="blue">filter</font><a class="anchor-link" href="#filter">&#182;</a></h3><blockquote><p></p>
 <ul>
-<li>특정기념일로 부터 얼마나 경과되었는지 알려주는 함수를 만드시오.</li>
-<li>경과일자가 1000일이 넘는경우, 천단위로 (,)를 붙혀서 출력해보기</li>
-<li>1234일 -&gt; 1,234일</li>
+<li>함수: 리스트를 받아서, 양수인 element 만 새로운 리스트 </li>
+<li>input: [1, -2,  3, -4,  5] =&gt; [1, 3, 5]</li>
 </ul>
 </blockquote>
 
@@ -13814,11 +13685,519 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[18]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">datetime</span> <span class="k">import</span> <span class="n">datetime</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">numbers</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">2</span><span class="p">,</span>  <span class="mi">3</span><span class="p">,</span> <span class="o">-</span><span class="mi">4</span><span class="p">,</span>  <span class="mi">5</span><span class="p">]</span>
 
-<span class="k">def</span> <span class="nf">getMemorialDay</span><span class="p">(</span><span class="n">year</span><span class="p">,</span> <span class="n">month</span><span class="p">,</span> <span class="n">day</span><span class="p">,</span> <span class="n">mem_day</span><span class="o">=</span><span class="s1">&#39;기념일&#39;</span><span class="p">,</span> <span class="n">is_msg</span><span class="o">=</span><span class="kc">True</span><span class="p">):</span>
-    
-    <span class="k">pass</span>
+<span class="nb">list</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span>
+    <span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">,</span>
+    <span class="n">numbers</span><span class="p">,</span>
+<span class="p">))</span>   <span class="c1"># Boolean List / Boolean Mask, Filtering Mask</span>
+
+<span class="nb">list</span><span class="p">(</span><span class="nb">filter</span><span class="p">(</span>
+    <span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">,</span>
+    <span class="n">numbers</span><span class="p">,</span>
+<span class="p">))</span>
+
+<span class="c1"># map - element func apply</span>
+<span class="c1"># filter - element func apply, filtering when True ( Filtering Mask )</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[18]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>[1, 3, 5]</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[19]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">get_positive_list</span><span class="p">(</span><span class="n">numbers</span><span class="p">):</span>
+    <span class="n">elements</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">number</span> <span class="ow">in</span> <span class="n">numbers</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">number</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>               <span class="c1"># False, False, True, True</span>
+            <span class="n">elements</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">number</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">elements</span>
+
+<span class="n">get_positive_list</span><span class="p">(</span><span class="n">numbers</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[19]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>[1, 3, 5]</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[20]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">list</span><span class="p">(</span><span class="nb">filter</span><span class="p">(</span>
+    <span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">,</span>
+    <span class="n">numbers</span><span class="p">,</span>
+<span class="p">))</span>
+
+<span class="k">def</span> <span class="nf">get_positive_list</span><span class="p">(</span><span class="n">numbers</span><span class="p">):</span>
+    <span class="k">return</span> <span class="nb">list</span><span class="p">(</span><span class="nb">filter</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">,</span> <span class="n">numbers</span><span class="p">))</span>
+
+<span class="n">get_positive_list</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">2</span><span class="p">,</span>  <span class="mi">3</span><span class="p">,</span> <span class="o">-</span><span class="mi">4</span><span class="p">,</span>  <span class="mi">5</span><span class="p">])</span>
+
+
+<span class="n">get_positive_list</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">numbers</span><span class="p">:</span> <span class="nb">list</span><span class="p">(</span><span class="nb">filter</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">,</span> <span class="n">numbers</span><span class="p">))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[21]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">get_positive_list</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">2</span><span class="p">,</span>  <span class="mi">3</span><span class="p">,</span> <span class="o">-</span><span class="mi">4</span><span class="p">,</span>  <span class="mi">5</span><span class="p">])</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[21]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>[1, 3, 5]</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="reduce"><font color="blue">reduce</font><a class="anchor-link" href="#reduce">&#182;</a></h3><blockquote><p></p>
+<ul>
+<li>입력값을 순차적으로 한개씩 받아서 최종결과값을 갱신한다.</li>
+</ul>
+</blockquote>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[22]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 1. 리스트를 받아서, 리스트의 숫자들 의 곱 | [1, 2, 3, 4] =&gt; 24</span>
+<span class="c1"># 2. 리스트를 받아서, 리스트 중에서 제일 큰 수 | [-1, 0, 2, 4, 3] =&gt; 4</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[23]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 1. 곱 </span>
+
+<span class="k">def</span> <span class="nf">get_multiply</span><span class="p">(</span><span class="n">numbers</span><span class="p">):</span>
+    <span class="n">result</span> <span class="o">=</span> <span class="mi">1</span>
+    <span class="k">for</span> <span class="n">number</span> <span class="ow">in</span> <span class="n">numbers</span><span class="p">:</span>
+        <span class="n">result</span> <span class="o">*=</span> <span class="n">number</span>
+    <span class="k">return</span> <span class="n">result</span>
+
+<span class="n">get_multiply</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">])</span>
+
+<span class="c1"># 1, 1, 2, 3, 4</span>
+<span class="c1">#    1, 2, 3, 4</span>
+<span class="c1">#       2, 3, 4</span>
+<span class="c1">#          6, 4</span>
+<span class="c1">#            24</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[23]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>24</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[24]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">get_max</span><span class="p">(</span><span class="n">numbers</span><span class="p">):</span>
+    <span class="n">result</span> <span class="o">=</span> <span class="n">numbers</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>  <span class="c1"># 만약에, 0이라고 했을 때 =&gt; 음수의 리스트 </span>
+    <span class="k">for</span> <span class="n">number</span> <span class="ow">in</span> <span class="n">numbers</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">result</span> <span class="o">&lt;</span> <span class="n">number</span><span class="p">:</span>
+            <span class="n">result</span> <span class="o">=</span> <span class="n">number</span>
+    <span class="k">return</span> <span class="n">result</span>
+
+<span class="n">get_max</span><span class="p">([</span><span class="mi">3</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="o">-</span><span class="mi">6</span><span class="p">])</span>
+
+<span class="c1"># 3, -1, 5, -6</span>
+<span class="c1">#     3, 5, -6</span>
+<span class="c1">#        5, -6</span>
+<span class="c1">#            5</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[24]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>5</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[25]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 최종적인 output </span>
+<span class="c1"># [init, a, b, c, d, e] =&gt; result</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[26]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">get_bigger</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">a</span> <span class="k">if</span> <span class="n">a</span> <span class="o">&gt;</span> <span class="n">b</span> <span class="k">else</span> <span class="n">b</span>
+
+<span class="n">reduce</span><span class="p">(</span>
+    <span class="n">get_bigger</span><span class="p">,</span>
+    <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="o">-</span><span class="mi">6</span><span class="p">],</span>
+<span class="p">)</span>                     <span class="c1"># get_max</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[26]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>5</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[27]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">get_bigger</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[27]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>2</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[28]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">reduce</span><span class="p">(</span>
+    <span class="n">get_bigger</span><span class="p">,</span>
+    <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="o">-</span><span class="mi">6</span><span class="p">],</span>
+<span class="p">)</span>      
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[28]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>40</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[29]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">get_bigger</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">a</span> <span class="k">if</span> <span class="n">a</span> <span class="o">&gt;</span> <span class="n">b</span> <span class="k">else</span> <span class="n">b</span>
+
+<span class="n">reduce</span><span class="p">(</span>
+    <span class="n">get_bigger</span><span class="p">,</span>
+    <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="o">-</span><span class="mi">6</span><span class="p">],</span>
+<span class="p">)</span>                     <span class="c1"># get_max</span>
+
+<span class="n">reduce</span><span class="p">(</span>
+    <span class="k">lambda</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">:</span> <span class="n">x</span> <span class="k">if</span> <span class="n">x</span> <span class="o">&gt;</span> <span class="n">y</span> <span class="k">else</span> <span class="n">y</span><span class="p">,</span>
+    <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="o">-</span><span class="mi">6</span><span class="p">],</span>
+<span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">get_max</span><span class="p">(</span><span class="n">numbers</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">reduce</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">:</span> <span class="n">x</span> <span class="k">if</span> <span class="n">x</span> <span class="o">&gt;</span> <span class="n">y</span> <span class="k">else</span> <span class="n">y</span><span class="p">,</span> <span class="n">numbers</span><span class="p">)</span>
+
+<span class="n">get_max</span><span class="p">([</span><span class="mi">3</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="o">-</span><span class="mi">6</span><span class="p">])</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[29]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>5</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[30]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 리스트를 받아서, 모든 엘리먼트를 곱하는 기능</span>
+
+<span class="c1"># 1, 1, 2, 3, 4, 5 =&gt; 120</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[31]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">multiply</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">((</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">))</span>
+    <span class="k">return</span> <span class="n">a</span> <span class="o">*</span> <span class="n">b</span>
+
+<span class="n">reduce</span><span class="p">(</span>
+    <span class="n">multiply</span><span class="p">,</span>
+    <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">],</span>
+    <span class="mi">0</span><span class="p">,</span>               <span class="c1"># 기본값!!! (*)</span>
+<span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>(0, 1)
+(0, 2)
+(0, 3)
+(0, 4)
+(0, 5)
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[31]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>0</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[32]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 1. map      - apply</span>
+<span class="c1"># 2. filter   - apply, True</span>
+<span class="c1"># 3. reduce   - apply(a,b)</span>
 </pre></div>
 
     </div>
@@ -13829,65 +14208,96 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<div class="highlight"><pre><span></span><span class="k">pass</span>
+<h3 id="&#49892;&#49845;.-Histogram-&#54632;&#49688;-&#51089;&#49457;&#54644;&#48372;&#44592;"><font color="blue">&#49892;&#49845;. Histogram &#54632;&#49688; &#51089;&#49457;&#54644;&#48372;&#44592;</font><a class="anchor-link" href="#&#49892;&#49845;.-Histogram-&#54632;&#49688;-&#51089;&#49457;&#54644;&#48372;&#44592;">&#182;</a></h3><blockquote><p>리스트를 받아서, 히스토그램을 그리는 함수</p>
+<ul>
+<li>입력값 : ["cat", "cat", "cat", "sheep", "sheep", "duck", "duck", "duck", "duck" ]</li>
+</ul>
+</blockquote>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<div class="highlight"><pre><span></span><span class="c1"># 1. 히스토그램을 그리는 함수 </span>
+  <span class="nb">input</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;cat&#39;</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span> <span class="s1">&#39;duck&#39;</span><span class="p">:</span> <span class="mi">4</span><span class="p">,</span> <span class="s1">&#39;sheep&#39;</span><span class="p">:</span> <span class="mi">2</span><span class="p">}</span> <span class="o">=&gt;</span> <span class="n">output</span><span class="p">:</span> <span class="err">그림</span> 
+
+<span class="c1"># 2. 리스트를 받아서, 숫자를 세는 함수</span>
+  <span class="nb">input</span><span class="p">:</span> <span class="nb">list</span> <span class="o">=&gt;</span> <span class="n">output</span><span class="p">:</span> <span class="n">histogram</span> <span class="nb">dict</span>
 </pre></div>
-<!--
-from datetime import datetime
 
-def getMemorialDay(year, month, day, mem_day='기념일', is_msg=True):
-    m_day = datetime(year, month, day)
-    today = datetime.now()
-    elapsed = today - m_day
-
-    elapsed_day   = elapsed.days
-    elapsed_month = int(elapsed_day / 30)
-    elapsed_year  = int(elapsed_day /365)
-
-    # print('check: ', type(elapsed_day), elapsed_day, getCommaSeperatedNumber(elapsed_day)) 
-
-    msg = '오늘은 "{mday}"로부터 {e_dd}일 경과되었고, 달 수로는 {e_mm}개월째, 연 수로는 {e_yy}년째 되었습니다!!'.format(
-        mday = mem_day,
-        e_dd = getCSN(elapsed_day),
-        # e_dd = elapsed_day,
-        e_mm = elapsed_month,
-        e_yy = elapsed_year
-    )
-    if is_msg: print(msg)
-
-    return elapsed_year, elapsed_month, elapsed_day
-
-
-def getCSN(num):
-    return getCommaSeperatedNumber(num)
-
-def getCommaSeperatedNumber(num):
-    num = str(num)
-    if num.isdigit():
-        num = num[::-1]
-        ret = ''
-        for i, c in enumerate(num):
-            i += 1
-            if i != len(num) and i%3 == 0:
-                ret += (c + ',')
-            else:
-                ret += c
-        ret = ret[::-1]
-        # print(ret)
-    else:
-        # print('입력한 내용 [%s]: 숫자가 아닙니다.' %num)
-        ret = None
-
-    return ret
--->
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[20]:</div>
+<div class="prompt input_prompt">In&nbsp;[33]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">getMemorialDay</span><span class="p">(</span><span class="mi">2000</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;밀레니엄일&#39;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;cat&quot;</span><span class="p">,</span> <span class="s2">&quot;cat&quot;</span><span class="p">,</span> <span class="s2">&quot;cat&quot;</span><span class="p">,</span> <span class="s2">&quot;sheep&quot;</span><span class="p">,</span> <span class="s2">&quot;sheep&quot;</span><span class="p">,</span> <span class="s2">&quot;duck&quot;</span><span class="p">,</span> <span class="s2">&quot;duck&quot;</span><span class="p">,</span> <span class="s2">&quot;duck&quot;</span><span class="p">,</span> <span class="s2">&quot;duck&quot;</span> <span class="p">]</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="#-&#44033;&#51088;-reduce&#47484;-&#54876;&#50857;&#54616;&#50668;--&#50500;&#47000;&#50752;-&#44057;&#51008;-Histogram&#51060;-&#52636;&#47141;&#46104;&#46020;&#47197;-&#54632;&#49688;&#47484;-&#44396;&#54788;&#54644;&#48372;&#49464;&#50836;-!!!"># &#44033;&#51088; reduce&#47484; &#54876;&#50857;&#54616;&#50668;  &#50500;&#47000;&#50752; &#44057;&#51008; Histogram&#51060; &#52636;&#47141;&#46104;&#46020;&#47197; &#54632;&#49688;&#47484; &#44396;&#54788;&#54644;&#48372;&#49464;&#50836; !!!<a class="anchor-link" href="##-&#44033;&#51088;-reduce&#47484;-&#54876;&#50857;&#54616;&#50668;--&#50500;&#47000;&#50752;-&#44057;&#51008;-Histogram&#51060;-&#52636;&#47141;&#46104;&#46020;&#47197;-&#54632;&#49688;&#47484;-&#44396;&#54788;&#54644;&#48372;&#49464;&#50836;-!!!">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[35]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">draw_histogram</span><span class="p">(</span><span class="n">data</span><span class="p">):</span>
+    <span class="k">pass</span>
+    <span class="k">pass</span>
+    <span class="k">pass</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[37]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">draw_histogram</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -13904,100 +14314,13 @@ def getCommaSeperatedNumber(num):
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>오늘은 &#34;밀레니엄일&#34;로부터 7,173일 경과되었고, 달 수로는 239개월째, 연 수로는 19년째 되었습니다!!
+<pre>
+  cat    ===
+  sheep  ==
+  duck   ====
+
 </pre>
 </div>
-</div>
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[20]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>(19, 239, 7173)</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[21]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">getMemorialDay</span><span class="p">(</span><span class="mi">2014</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">16</span><span class="p">,</span> <span class="s1">&#39;세월호침몰사고일&#39;</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>오늘은 &#34;세월호침몰사고일&#34;로부터 1,954일 경과되었고, 달 수로는 65개월째, 연 수로는 5년째 되었습니다!!
-</pre>
-</div>
-</div>
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[21]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>(5, 65, 1954)</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[22]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">_y</span><span class="p">,</span> <span class="n">_m</span><span class="p">,</span> <span class="n">elapsed_day</span> <span class="o">=</span> <span class="n">getMemorialDay</span><span class="p">(</span><span class="mi">2019</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">25</span><span class="p">,</span> <span class="s1">&#39;크리스마스&#39;</span><span class="p">,</span> <span class="kc">False</span><span class="p">)</span>
-<span class="s1">&#39;크리스마스까지는 </span><span class="si">%d</span><span class="s1">일 남았습니다!!&#39;</span> <span class="o">%</span> <span class="o">-</span><span class="n">elapsed_day</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[22]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>&#39;크리스마스까지는 125일 남았습니다!!&#39;</pre>
-</div>
-
 </div>
 
 </div>
