@@ -44,9 +44,9 @@
 [A2113]:  https://htmlpreview.github.io/?https://github.com/lukejskim/sba19-seoulit/blob/master/notebook/html/BPC_A211_MFR_ver3.html                 "Go A2113"
 
 [p-ex1]: ../practice/P01_파이썬프로그래밍_실습.pdf                     "Go Practice-ex1"
-[p-ex2]: ../practice/P01_파이썬프로그래밍_실습.pdf                     "Go Practice-ex2"
-[p-ex3]: ../practice/P01_파이썬프로그래밍_실습.pdf                     "Go Practice-ex3"
-[p-ex4]: ../practice/P01_파이썬프로그래밍_실습.pdf                     "Go Practice-ex4"
+[p-ex2]: ../practice/P02_파이썬프로그래밍_실습.pdf                     "Go Practice-ex2"
+[p-ex3]: ../practice/P03_파이썬프로그래밍_실습.pdf                     "Go Practice-ex3"
+[p-ex4]: ../practice/P04_파이썬프로그래밍_실습.pdf                     "Go Practice-ex4"
 
 
 <hr>
