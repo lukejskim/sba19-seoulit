@@ -47,7 +47,7 @@
 - 4-4. [Pandas4                ][B3240]
 <br/><br/>
 - 5-1. [MatplotLib.Pyplot      ][B3300]
-- <font color='#CC0000'> [실습문제] 영화 평점 시각화 실습</font> ─────▶ [[클릭]][p-ex4]
+- <font color='#CC0000'> [실습문제] 영화 평점 시각화 실습</font> ─────▶ [[클릭]][B3301]
 <br/><br/>
 - 5-2. [Basic Chart            ][B3310]
 - 5-3. [Color & Style          ][B3320]
