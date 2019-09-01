@@ -36,7 +36,7 @@
 - (1) 김태웅 [Kaggle Analysis for Titanic ][P4_01]
 - (2) 신은영 [Kaggle Analysis for Bike    ][P4_02]
 <br/><br/>
-- 8.   [Kaggle Mission                          ][D4300]
+- 8-0. [Kaggle Mission                          ][D4300]
 - 8-1. [Analytical Approach : General           ][D4310]
 - 8-2. [Analytical Approach : Advanced          ][D4323]
 <br/><br/>
