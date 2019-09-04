@@ -21,18 +21,18 @@
 
 ## Web Cralwling
 
-- 11-0. [Web Scraping Basic           ][E5100]
-- 11-1. [Web Scraping Basic           ][E5111]
-- 11-2. [Web Scraping Basic           ][E5112]
-- 11-3. [Web Scraping Basic           ][E5113]
-- 11-4. [Web Scraping Basic           ][E5114]
-- 11-5. [Web Scraping Basic           ][E5115]
+- 11-0. [Web Scraping Basics           ][E5100]
+- 11-1. [Web Scraping Basic1           ][E5111]
+- 11-2. [Web Scraping Basic2           ][E5112]
+- 11-3. [Web Scraping Basic3           ][E5113]
+- 11-4. [Web Scraping Basic4           ][E5114]
+- 11-5. [Web Scraping Basic5           ][E5115]
 <br/><br/>
-- Quiz. [Web Scraping Practice        ][E5200]
+- Quiz. [Web Scraping Practice         ][E5200]
 <br/><br/>
-- 12-1. [Web Crawling - McDonalds Idx ][E5410]
-- 12-2. [Web Crawling - 50 Best 1/2   ][E5310]
-- 12-3. [Web Crawling - 50 Best 2/2   ][E5320]
+- 12-1. [Web Crawling - McDonalds Idx  ][E5410]
+- 12-2. [Web Crawling - 50 Best 1/2    ][E5310]
+- 12-3. [Web Crawling - 50 Best 2/2    ][E5320]
 <br/><br/>
 - Quiz1. [Web Crawling Practice A  ][E5400]
 - Quiz2. [Web Crawling Practice B  ][E5300]
@@ -53,6 +53,7 @@
 [E5320]:  https://htmlpreview.github.io/?https://github.com/lukejskim/sba19-seoulit/blob/master/notebook/html/BPC_E532_Web_Crawling2_ver3.html                  "Go D4300"
 [E5400]:  https://htmlpreview.github.io/?https://github.com/lukejskim/sba19-seoulit/blob/master/notebook/html/BPC_E540_Seoul_McDonalds_idx_Quiz.html            "Go D4310"
 [E5410]:  https://htmlpreview.github.io/?https://github.com/lukejskim/sba19-seoulit/blob/master/notebook/html/BPC_E541_Seoul_McDonalds_idx_ver4.html            "Go D4323"
+
 
 
 <hr>
