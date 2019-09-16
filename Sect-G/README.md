@@ -15,51 +15,53 @@
 - Web Cralwling
 - Natural Language Processing
 - <b>Machine Learning</b>
-- Deep Learning
+- <b>Deep Learning</b>
 
 <hr>
 
 ## Machine Learning for BigData
 
 - M1-1. [Basics operations                         ][ML1010]
-- M1-2. [Linear Regression                  	   ][ML1020]
-- M1-3. [Minimizing Cost                    	   ][ML1030]
-- M1-4. [Multi-Variable linear regression   	   ][ML1040]
+- M1-2. [Linear Regression                         ][ML1020]
+- M1-3. [Minimizing Cost                           ][ML1030]
+- M1-4. [Multi-Variable linear regression          ][ML1040]
 <br/><br/>
-- M2-1. [Logistic classifier                	   ][ML2010]
-- M2-2. [Softmax Classifier                 	   ][ML2020]
+- M2-1. [Logistic classifier                       ][ML2010]
+- M2-2. [Softmax Classifier                        ][ML2020]
 <br/><br/>
-- M3-1. [Learning rate Evaluation           	   ][ML3010]
-- M3-2. [Tensor Manipulation                	   ][ML3020]
+- M3-1. [Learning rate Evaluation                  ][ML3010]
+- M3-2. [Tensor Manipulation                       ][ML3020]
 <br/><br/>
-- M4-1. [Neural Networks 1                  	   ][ML4010]
-- M4-2. [Neural Networks 2                  	   ][ML4020]
-- M4-2. [Neural Networks 2 (1)                 	   ][ML4021]
-- M4-2. [Neural Networks 2 (2)             	       ][ML4022]
+- M4-1. [Neural Networks 1                         ][ML4010]
+- M4-2. [Neural Networks 2                         ][ML4020]
+- M4-2. [Neural Networks 2 (1)                     ][ML4021]
+- M4-2. [Neural Networks 2 (2)                     ][ML4022]
 <br/><br/>
-- M5-1. [Softmax for MNIST                  	   ][ML5110]
-- M5-2. [NN for MNIST                       	   ][ML5120]
-- M5-3. [MNIST NN Xavier initialization(1)  	   ][ML5132]
-- M5-3. [MNIST NN Xavier initialization(2)  	   ][ML5133]
-- M5-4. [MNIST NN deep                      	   ][ML5140]
-- M5-5. [MNIST NN Dropout                   	   ][ML5150]
+- M5-1. [Softmax for MNIST                         ][ML5110]
+- M5-2. [NN for MNIST                              ][ML5120]
+- M5-3. [MNIST NN Xavier initialization(1)         ][ML5132]
+- M5-3. [MNIST NN Xavier initialization(2)         ][ML5133]
+- M5-4. [MNIST NN deep                             ][ML5140]
+- M5-5. [MNIST NN Dropout                          ][ML5150]
 <br/><br/>
-- Ref1. [MNIST NN Batchnorm                		   ][ML5160]
-- Ref2. [MNIST NN Higher Level API         		   ][ML5170]
+- Ref1. [MNIST NN Batchnorm                        ][ML5160]
+- Ref2. [MNIST NN Higher Level API                 ][ML5170]
 <br/><br/>
-- M6-0. [Convolution Neural Network           	   ][ML6200]
-- M6-1. [MNIST CNN                          	   ][ML6210]
-- M6-2. [MNIST Deep CNN                     	   ][ML6220]
-- M6-3. [MNIST CNN Class                    	   ][ML6230]
-- M6-4. [MNIST CNN Layers                   	   ][ML6240]
-- M6-5. [MNIST CNN Ensemble Layers          	   ][ML6250]
+- M6-0. [Convolution Neural Network                ][ML6200]
+- M6-1. [MNIST CNN                                 ][ML6210]
+- M6-2. [MNIST Deep CNN                            ][ML6220]
+- M6-3. [MNIST CNN Class                           ][ML6230]
+- M6-4. [MNIST CNN Layers                          ][ML6240]
+- M6-5. [MNIST CNN Ensemble Layers                 ][ML6250]
 <br/><br/>
-- M7-0. [Recurrent Neural Network             	   ][ML7210]
-- M7-1. [RNN String Sequence                	   ][ML7210]
-- M7-2. [RNN Sentence Sequence              	   ][ML7220]
-- M7-3. [Only Softmax Sentence Sequence     	   ][ML7230]
-- M7-4. [RNN Long Sentence                  	   ][ML7240]
-- M7-5. [RNN Stock Prediction               	   ][ML7250]
+- M7-0. [Recurrent Neural Network                  ][ML7210]
+- M7-1. [RNN String Sequence                       ][ML7210]
+- M7-2. [RNN Sentence Sequence                     ][ML7220]
+- M7-3. [Only Softmax Sentence Sequence            ][ML7230]
+- M7-4. [RNN Long Sentence                         ][ML7240]
+- M7-5. [RNN Stock Prediction                      ][ML7250]
+<br/><br/>
+- Tip.  [DeepLearning Model Saver & Reuse          ][ML8100]
 <br/><br/>
 
 
