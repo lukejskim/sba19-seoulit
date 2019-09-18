@@ -101,6 +101,11 @@
 - <b>Presentation </b>: 10min / team, Q&A
 - <b>Keep in mind </b>: <font color='#CC0000'><b> Share Lessons Learned !! </b></font>
 
+[![Video Label](mov/SBA19_01.JPG)](https://youtu.be/G0u2V-en8oA) 
+### SBA19 BigData Science, Just Click Image ^^
+
+<hr>
+
 ### <font color="red">Project Team A </font>
 
 <div align=left width=100%>
