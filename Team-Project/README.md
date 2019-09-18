@@ -101,8 +101,9 @@
 - <b>Presentation </b>: 10min / team, Q&A
 - <b>Keep in mind </b>: <font color='#CC0000'><b> Share Lessons Learned !! </b></font>
 
+### <font color="red">Project Team A </font>
+
 <div align=left width=100%>
-<h3><font color="red">Project Team A </font></h3>
 <table border=1 width=100%>
 	<tr>
 		<td width="25%"><div align="center"><b>Project Team</b></div></td>
@@ -133,8 +134,9 @@
 </div>
 
 
+### <font color="orange">Project Team B </font>
+
 <div align=left width=100%>
-<h3><font color="orange">Project Team B </font></h3>
 <table border=1 width=100%>
 	<tr>
 		<td width="25%"><div align="center"><b>Project Team</b></div></td>
@@ -164,9 +166,9 @@
 </table>
 </div>
 
+### <font color="#AAAA00">Project Team C </font>
 
 <div align=left width=100%>
-<h3><font color="#AAAA00">Project Team C </font></h3>
 <table border=1 width=100%>
 	<tr>
 		<td width="25%"><div align="center"><b>Project Team</b></div></td>
@@ -197,8 +199,9 @@
 </div>
 
 
+### <font color="green">Project Team D </font>
+
 <div align=left width=100%>
-<h3><font color="green">Project Team D </font></h3>
 <table border=1 width=100%>
 	<tr>
 		<td width="25%"><div align="center"><b>Project Team</b></div></td>
@@ -229,8 +232,9 @@
 </div>
 
 
+### <font color="blue">Project Team E </font>
+
 <div align=left width=100%>
-<h3><font color="blue">Project Team E </font></h3>
 <table border=1 width=100%>
 	<tr>
 		<td width="25%"><div align="center"><b>Project Team</b></div></td>
@@ -261,8 +265,9 @@
 </div>
 
 
+### <font color="indigo">Project Team F </font>
+
 <div align=left width=100%>
-<h3><font color="indigo">Project Team F </font></h3>
 <table border=1 width=100%>
 	<tr>
 		<td width="25%"><div align="center"><b>Project Team</b></div></td>
@@ -294,8 +299,9 @@
 </div>
 
 
+### <font color="purple">Project Team G </font>
+
 <div align=left width=100%>
-<h3><font color="purple">Project Team G </font></h3>
 <table border=1 width=100%>
 	<tr>
 		<td width="25%"><div align="center"><b>Project Team</b></div></td>
