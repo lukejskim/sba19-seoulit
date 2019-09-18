@@ -35,9 +35,9 @@
 
 ##  <font color='#00AAAA'>Team Project : Kick Off</font>
 
-- 1st Subject : <b>Analyze Social Issues Using BigData </b>
-- Our Motto   : <b>Learning by doing, doing by learning !! </b>
-- Report Format : <a href="./docu/SBA19_착수보고서_포맷_OOO팀.docx">착수보고서 양식</a>
+- <b>1st Subject </b>: <font color='#CC0000'><b>Analyze Social Issues Using BigData </b></font>
+- <b>Our Motto   </b>: <font color='#CC0000'><b>Learning by doing, doing by learning !! </b></font>
+- <b>Report Format </b>: <a href="./docu/SBA19_착수보고서_포맷_OOO팀.docx">착수보고서 양식</a>
 - ※ If you click on the image on the right, you can view "Initiation Report" by team.
 
 
@@ -97,15 +97,44 @@
 <hr>
 
 ##  <font color='#00AAAA'>Team Project : Final Report</font>
-
-
-
-```python
-
-```
+- <b>Submission   </b>: 착수보고, 결과보고, 소스코드
+- <b>Presentation </b>: 10min / team, Q&A
+- <b>Keep in mind </b>: <font color='#CC0000'><b> Share Lessons Learned !! </b></font>
 
 <div align=left width=100%>
-<h4>Project Team B </h4>
+<h3><font color="red">Project Team A </font></h3>
+<table border=1 width=100%>
+	<tr>
+		<td width="25%"><div align="center"><b>Project Team</b></div></td>
+		<td width="75%"><div align="left" > EV짜요 팀</div></td>
+	</tr>
+	<tr>
+		<td><div align="center"><b>Team Members</b></div></td>
+		<td><div align="left" > 윤종필, 홍성민, 이찬희, 구교석 </div></td>
+	</tr>
+	<tr>
+		<td><div align="center"><b>Report</b></div></td>
+		<td>
+			<div align="left" > 
+				<a href="reports/SBA19_S1_착수보고서_A팀.pdf">[A팀 착수보고]</a>, &nbsp;&nbsp;&nbsp; 
+				<a href="reports/Team_A/code/">[A팀 소스코드]</a>  
+			</div>
+		</td>
+	</tr>
+	<tr>
+		<td><div align="center"><b>Subject</b></div></td>
+		<td><div align="left" > 전기차 보급확대 방안</div></td>
+	</tr>
+	<tr>
+		<td><div align="center"><b>Presentation</b></div></td>
+		<td><div align="left" ><a href="reports/SBA19_S3_최종보고서_A팀.pdf"><img src="images/Front_A.png" width="90%"></a></div></td>
+	</tr>
+</table>
+</div>
+
+
+<div align=left width=100%>
+<h3><font color="orange">Project Team B </font></h3>
 <table border=1 width=100%>
 	<tr>
 		<td width="25%"><div align="center"><b>Project Team</b></div></td>
@@ -119,8 +148,8 @@
 		<td><div align="center"><b>Report</b></div></td>
 		<td>
 			<div align="left" > 
-				<a href="report/SBA19_S1_착수보고서_B팀.pdf">[B팀 착수보고]</a>, &nbsp;&nbsp;&nbsp; 
-				<a href="report/Team_B/code/">[B팀 소스코드]</a>  
+				<a href="reports/SBA19_S1_착수보고서_B팀.pdf">[B팀 착수보고]</a>, &nbsp;&nbsp;&nbsp; 
+				<a href="reports/Team_B/code/">[B팀 소스코드]</a>  
 			</div>
 		</td>
 	</tr>
@@ -130,14 +159,110 @@
 	</tr>
 	<tr>
 		<td><div align="center"><b>Presentation</b></div></td>
-		<td><div align="left" ><img src="images/Front_B.png" width="90%"></div></td>
+		<td><div align="left" ><a href="reports/SBA19_S3_최종보고서_B팀.pdf"><img src="images/Front_B.png" width="90%"></a></div></td>
 	</tr>
 </table>
 </div>
 
 
 <div align=left width=100%>
-<h4>Project Team F </h4>
+<h3><font color="#AAAA00">Project Team C </font></h3>
+<table border=1 width=100%>
+	<tr>
+		<td width="25%"><div align="center"><b>Project Team</b></div></td>
+		<td width="75%"><div align="left" > 강산이네 팀</div></td>
+	</tr>
+	<tr>
+		<td><div align="center"><b>Team Members</b></div></td>
+		<td><div align="left" > 이강산, 이송현, 김은수 </div></td>
+	</tr>
+	<tr>
+		<td><div align="center"><b>Report</b></div></td>
+		<td>
+			<div align="left" > 
+				<a href="reports/SBA19_S1_착수보고서_C팀.pdf">[C팀 착수보고]</a>, &nbsp;&nbsp;&nbsp; 
+				<a href="reports/Team_C/code/">[C팀 소스코드]</a>  
+			</div>
+		</td>
+	</tr>
+	<tr>
+		<td><div align="center"><b>Subject</b></div></td>
+		<td><div align="left" > 100세 시대의 문제해결방향 </div></td>
+	</tr>
+	<tr>
+		<td><div align="center"><b>Presentation</b></div></td>
+		<td><div align="left" ><a href="reports/SBA19_S3_최종보고서_C팀.pdf"><img src="images/Front_C.png" width="90%"></a></div></td>
+	</tr>
+</table>
+</div>
+
+
+<div align=left width=100%>
+<h3><font color="green">Project Team D </font></h3>
+<table border=1 width=100%>
+	<tr>
+		<td width="25%"><div align="center"><b>Project Team</b></div></td>
+		<td width="75%"><div align="left" > 고공비행 팀</div></td>
+	</tr>
+	<tr>
+		<td><div align="center"><b>Team Members</b></div></td>
+		<td><div align="left" > 권다연, 김은비, 김태인 </div></td>
+	</tr>
+	<tr>
+		<td><div align="center"><b>Report</b></div></td>
+		<td>
+			<div align="left" > 
+				<a href="reports/SBA19_S1_착수보고서_D팀.pdf">[D팀 착수보고]</a>, &nbsp;&nbsp;&nbsp; 
+				<a href="reports/Team_D/code/">[D팀 소스코드]</a>  
+			</div>
+		</td>
+	</tr>
+	<tr>
+		<td><div align="center"><b>Subject</b></div></td>
+		<td><div align="left" > 서울시 골목상권 </div></td>
+	</tr>
+	<tr>
+		<td><div align="center"><b>Presentation</b></div></td>
+		<td><div align="left" ><a href="reports/SBA19_S3_최종보고서_D팀.pdf"><img src="images/Front_D.png" width="90%"></a></div></td>
+	</tr>
+</table>
+</div>
+
+
+<div align=left width=100%>
+<h3><font color="blue">Project Team E </font></h3>
+<table border=1 width=100%>
+	<tr>
+		<td width="25%"><div align="center"><b>Project Team</b></div></td>
+		<td width="75%"><div align="left" > No JAPAN 팀</div></td>
+	</tr>
+	<tr>
+		<td><div align="center"><b>Team Members</b></div></td>
+		<td><div align="left" > 김슬기, 성형민, 김지은 </div></td>
+	</tr>
+	<tr>
+		<td><div align="center"><b>Report</b></div></td>
+		<td>
+			<div align="left" > 
+				<a href="reports/SBA19_S1_착수보고서_E팀.pdf">[E팀 착수보고]</a>, &nbsp;&nbsp;&nbsp; 
+				<a href="reports/Team_E/code/">[E팀 소스코드]</a>  
+			</div>
+		</td>
+	</tr>
+	<tr>
+		<td><div align="center"><b>Subject</b></div></td>
+		<td><div align="left" > 일본 불매운동에 대한 과거와 현재의 온도차 </div></td>
+	</tr>
+	<tr>
+		<td><div align="center"><b>Presentation</b></div></td>
+		<td><div align="left" ><a href="reports/SBA19_S3_최종보고서_E팀.pdf"><img src="images/Front_E.png" width="90%"></a></div></td>
+	</tr>
+</table>
+</div>
+
+
+<div align=left width=100%>
+<h3><font color="indigo">Project Team F </font></h3>
 <table border=1 width=100%>
 	<tr>
 		<td width="25%"><div align="center"><b>Project Team</b></div></td>
@@ -150,12 +275,12 @@
 	<tr>
 		<td><div align="center"><b>Report</b></div></td>
 		<td>
-            <div align="left" > 
-                <a href="report/SBA19_S1_착수보고서_F팀.pdf">[F팀 착수보고]</a>, &nbsp;&nbsp;&nbsp; 
-                <a href="report/SBA19_S2_결과보고서_F팀.pdf">[F팀 결과보고]</a>, &nbsp;&nbsp;&nbsp; 
-                <a href="report/Team_F/code/">[F팀 소스코드]</a>  
-            </div>
-        </td>
+			<div align="left" > 
+				<a href="reports/SBA19_S1_착수보고서_F팀.pdf">[F팀 착수보고]</a>, &nbsp;&nbsp;&nbsp; 
+				<a href="reports/SBA19_S2_결과보고서_F팀.pdf">[F팀 결과보고]</a>, &nbsp;&nbsp;&nbsp; 
+				<a href="reports/Team_F/code/">[F팀 소스코드]</a>  
+			</div>
+		</td>
 	</tr>
 	<tr>
 		<td><div align="center"><b>Subject</b></div></td>
@@ -163,15 +288,14 @@
 	</tr>
 	<tr>
 		<td><div align="center"><b>Presentation</b></div></td>
-		<td><div align="left" ><img src="images/Front_F.png" width="90%"></div></td>
+		<td><div align="left" ><a href="reports/SBA19_S3_최종보고서_F팀.pdf"><img src="images/Front_F.png" width="90%"></a></div></td>
 	</tr>
 </table>
 </div>
 
 
-
 <div align=left width=100%>
-<h4>Project Team G </h4>
+<h3><font color="purple">Project Team G </font></h3>
 <table border=1 width=100%>
 	<tr>
 		<td width="25%"><div align="center"><b>Project Team</b></div></td>
@@ -184,11 +308,11 @@
 	<tr>
 		<td><div align="center"><b>Report</b></div></td>
 		<td>
-            <div align="left" > 
-                <a href="report/SBA19_S1_착수보고서_G팀.pdf">[G팀 착수보고]</a>, &nbsp;&nbsp;&nbsp; 
-                <a href="report/Team_G/code/">[G팀 소스코드]</a>  
-            </div>
-        </td>
+			<div align="left" > 
+				<a href="reports/SBA19_S1_착수보고서_G팀.pdf">[G팀 착수보고]</a>, &nbsp;&nbsp;&nbsp; 
+				<a href="reports/Team_G/code/">[G팀 소스코드]</a>  
+			</div>
+		</td>
 	</tr>
 	<tr>
 		<td><div align="center"><b>Subject</b></div></td>
@@ -196,11 +320,10 @@
 	</tr>
 	<tr>
 		<td><div align="center"><b>Presentation</b></div></td>
-		<td><div align="left" ><img src="images/Front_G.png" width="90%"></div></td>
+		<td><div align="left" ><a href="reports/SBA19_S3_최종보고서_G팀.pdf"><img src="images/Front_G.png" width="90%"></a></div></td>
 	</tr>
 </table>
 </div>
-
 
 
 ```python
@@ -276,6 +399,83 @@
 	</tr>
 </table>
 </div>
+
+
+
+
+
+<div align=left width=100%>
+<h4>Project Team F </h4>
+<table border=1 width=100%>
+	<tr>
+		<td width="12%"><div align="center"><b>&nbsp;</b></div></td>
+		<td width="22%"><div align="center"> Team A</div></td>
+		<td width="22%"><div align="center"> Team B</div></td>
+		<td width="22%"><div align="center"> Team C</div></td>
+		<td width="22%"><div align="center"> Team C</div></td>
+	</tr>
+	<tr>
+		<td><div align="center"><b>Project Team</b></div></td>
+		<td><div align="center">이구아나 팀</div></td>
+		<td><div align="center">이구아나 팀</div></td>
+		<td><div align="center">이구아나 팀</div></td>
+		<td><div align="center">이구아나 팀</div></td>
+	</tr>
+	<tr>
+		<td><div align="center"><b>Team Members</b></div></td>
+		<td><div align="center"> 김재경<br/> 김수환<br/> 신은영<br/> 이승은 </div></td>
+		<td><div align="center"> 김재경<br/> 김수환<br/> 신은영<br/> 이승은 </div></td>
+		<td><div align="center"> 김재경<br/> 김수환<br/> 신은영<br/> 이승은 </div></td>
+		<td><div align="center"> 김재경<br/> 김수환<br/> 신은영<br/> 이승은 </div></td>
+	</tr>
+	<tr>
+		<td><div align="center"><b>Report</b></div></td>
+		<td>
+			<div align="center">
+				<a href="report/SBA19_S1_착수보고서_F팀.pdf">[F팀 착수보고]</a><br/>
+				<a href="report/SBA19_S2_결과보고서_F팀.pdf">[F팀 결과보고]</a><br/> 
+				<a href="report/Team_F/code/">[F팀 소스코드]</a>  
+			</div>
+		</td>
+		<td>
+			<div align="center">
+				<a href="report/SBA19_S1_착수보고서_F팀.pdf">[F팀 착수보고]</a><br/>
+				<a href="report/SBA19_S2_결과보고서_F팀.pdf">[F팀 결과보고]</a><br/> 
+				<a href="report/Team_F/code/">[F팀 소스코드]</a>  
+			</div>
+		</td>
+		<td>
+			<div align="center">
+				<a href="report/SBA19_S1_착수보고서_F팀.pdf">[F팀 착수보고]</a><br/>
+				<a href="report/SBA19_S2_결과보고서_F팀.pdf">[F팀 결과보고]</a><br/> 
+				<a href="report/Team_F/code/">[F팀 소스코드]</a>  
+			</div>
+		</td>
+		<td>
+			<div align="center">
+				<a href="report/SBA19_S1_착수보고서_F팀.pdf">[F팀 착수보고]</a><br/>
+				<a href="report/SBA19_S2_결과보고서_F팀.pdf">[F팀 결과보고]</a><br/> 
+				<a href="report/Team_F/code/">[F팀 소스코드]</a>  
+			</div>
+		</td>
+	</tr>
+	<tr>
+		<td><div align="center"><b>Subject</b></div></td>
+		<td><div align="center">서울 vs 지방 의료 양극화 보완 </div></td>
+		<td><div align="center">서울 vs 지방 의료 양극화 보완 </div></td>
+		<td><div align="center">서울 vs 지방 의료 양극화 보완 </div></td>
+		<td><div align="center">서울 vs 지방 의료 양극화 보완 </div></td>
+	</tr>
+	<tr>
+		<td><div align="center"><b>Presentation</b></div></td>
+		<td><div align="center"><img src="images/Front_B.png" width=200 height=150></div></td>
+		<td><div align="center"><img src="images/Front_F.png" width=200 height=150></div></td>
+		<td><div align="center"><img src="images/Front_G.png" width=200 height=150></div></td>
+		<td><div align="center"><img src="images/Front_B.png" width=200 height=150></div></td>
+	</tr>
+</table>
+</div>
+
 
 
 
