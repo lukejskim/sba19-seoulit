@@ -22,7 +22,7 @@
 ## Special Lecture 
 
 - CS_1. [Case Study - 빅데이터 수집 및 감성분석       ][CS_100]
-- CS_2. [Case Study - 빅데이터 분석 및 머신러닝       ][CS_200]
+- CS_2. [Case Study - 도메인 지식과 데이터전처리       ][CS_200]
 <br/><br/>
 - SP_1. [Special Lecture - Convolution Neural Network ][SP_100]
 - SP_2. [Special Lecture - Recurrent Neural Network   ][SP_200]

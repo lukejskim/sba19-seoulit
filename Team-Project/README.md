@@ -95,5 +95,195 @@
 </div>
 
 <hr>
+
+##  <font color='#00AAAA'>Team Project : Final Report</font>
+
+
+
+```python
+
+```
+
+<div align=left width=100%>
+<h4>Project Team B </h4>
+<table border=1 width=100%>
+	<tr>
+		<td width="25%"><div align="center"><b>Project Team</b></div></td>
+		<td width="75%"><div align="left" > FORS 팀</div></td>
+	</tr>
+	<tr>
+		<td><div align="center"><b>Team Members</b></div></td>
+		<td><div align="left" > 김태웅, 김봉수, 백서연 </div></td>
+	</tr>
+	<tr>
+		<td><div align="center"><b>Report</b></div></td>
+		<td>
+			<div align="left" > 
+				<a href="report/SBA19_S1_착수보고서_B팀.pdf">[B팀 착수보고]</a>, &nbsp;&nbsp;&nbsp; 
+				<a href="report/Team_B/code/">[B팀 소스코드]</a>  
+			</div>
+		</td>
+	</tr>
+	<tr>
+		<td><div align="center"><b>Subject</b></div></td>
+		<td><div align="left" > 유기견 실태 조사 및 감소 대책</div></td>
+	</tr>
+	<tr>
+		<td><div align="center"><b>Presentation</b></div></td>
+		<td><div align="left" ><img src="images/Front_B.png" width="90%"></div></td>
+	</tr>
+</table>
+</div>
+
+
+<div align=left width=100%>
+<h4>Project Team F </h4>
+<table border=1 width=100%>
+	<tr>
+		<td width="25%"><div align="center"><b>Project Team</b></div></td>
+		<td width="75%"><div align="left" > 이구아나 팀</div></td>
+	</tr>
+	<tr>
+		<td><div align="center"><b>Team Members</b></div></td>
+		<td><div align="left" > 김재경, 김수환, 신은영, 이승은 </div></td>
+	</tr>
+	<tr>
+		<td><div align="center"><b>Report</b></div></td>
+		<td>
+            <div align="left" > 
+                <a href="report/SBA19_S1_착수보고서_F팀.pdf">[F팀 착수보고]</a>, &nbsp;&nbsp;&nbsp; 
+                <a href="report/SBA19_S2_결과보고서_F팀.pdf">[F팀 결과보고]</a>, &nbsp;&nbsp;&nbsp; 
+                <a href="report/Team_F/code/">[F팀 소스코드]</a>  
+            </div>
+        </td>
+	</tr>
+	<tr>
+		<td><div align="center"><b>Subject</b></div></td>
+		<td><div align="left" > 서울 vs 지방 의료 양극화 보완 </div></td>
+	</tr>
+	<tr>
+		<td><div align="center"><b>Presentation</b></div></td>
+		<td><div align="left" ><img src="images/Front_F.png" width="90%"></div></td>
+	</tr>
+</table>
+</div>
+
+
+
+<div align=left width=100%>
+<h4>Project Team G </h4>
+<table border=1 width=100%>
+	<tr>
+		<td width="25%"><div align="center"><b>Project Team</b></div></td>
+		<td width="75%"><div align="left" > 최미요?파이썬이요! 팀</div></td>
+	</tr>
+	<tr>
+		<td><div align="center"><b>Team Members</b></div></td>
+		<td><div align="left" > 손하늘, 양한솔, 류경아 </div></td>
+	</tr>
+	<tr>
+		<td><div align="center"><b>Report</b></div></td>
+		<td>
+            <div align="left" > 
+                <a href="report/SBA19_S1_착수보고서_G팀.pdf">[G팀 착수보고]</a>, &nbsp;&nbsp;&nbsp; 
+                <a href="report/Team_G/code/">[G팀 소스코드]</a>  
+            </div>
+        </td>
+	</tr>
+	<tr>
+		<td><div align="center"><b>Subject</b></div></td>
+		<td><div align="left" > 지역 간 인프라 차이와 개선 방안 </div></td>
+	</tr>
+	<tr>
+		<td><div align="center"><b>Presentation</b></div></td>
+		<td><div align="left" ><img src="images/Front_G.png" width="90%"></div></td>
+	</tr>
+</table>
+</div>
+
+
+
+```python
+
+```
+
+
+```python
+
+```
+
+
+```python
+
+```
+
+<div align=left width=100%>
+<h4>Project Team F </h4>
+<table border=1 width=100%>
+	<tr>
+		<td width="10%"><div align="center"><b>&nbsp;</b></div></td>
+		<td width="30%"><div align="center"> Team A</div></td>
+		<td width="30%"><div align="center"> Team B</div></td>
+		<td width="30%"><div align="center"> Team C</div></td>
+	</tr>
+	<tr>
+		<td><div align="center"><b>Project Team</b></div></td>
+		<td><div align="center">이구아나 팀</div></td>
+		<td><div align="center">이구아나 팀</div></td>
+		<td><div align="center">이구아나 팀</div></td>
+	</tr>
+	<tr>
+		<td><div align="center"><b>Team Members</b></div></td>
+		<td><div align="center"> 김재경<br/> 김수환<br/> 신은영<br/> 이승은 </div></td>
+		<td><div align="center"> 김재경<br/> 김수환<br/> 신은영<br/> 이승은 </div></td>
+		<td><div align="center"> 김재경<br/> 김수환<br/> 신은영<br/> 이승은 </div></td>
+	</tr>
+	<tr>
+		<td><div align="center"><b>Report</b></div></td>
+		<td>
+			<div align="center">
+				<a href="report/SBA19_S1_착수보고서_F팀.pdf">[F팀 착수보고]</a><br/>
+				<a href="report/SBA19_S2_결과보고서_F팀.pdf">[F팀 결과보고]</a><br/> 
+				<a href="report/Team_F/code/">[F팀 소스코드]</a>  
+			</div>
+		</td>
+		<td>
+			<div align="center">
+				<a href="report/SBA19_S1_착수보고서_F팀.pdf">[F팀 착수보고]</a><br/>
+				<a href="report/SBA19_S2_결과보고서_F팀.pdf">[F팀 결과보고]</a><br/> 
+				<a href="report/Team_F/code/">[F팀 소스코드]</a>  
+			</div>
+		</td>
+		<td>
+			<div align="center">
+				<a href="report/SBA19_S1_착수보고서_F팀.pdf">[F팀 착수보고]</a><br/>
+				<a href="report/SBA19_S2_결과보고서_F팀.pdf">[F팀 결과보고]</a><br/> 
+				<a href="report/Team_F/code/">[F팀 소스코드]</a>  
+			</div>
+		</td>
+	</tr>
+	<tr>
+		<td><div align="center"><b>Subject</b></div></td>
+		<td><div align="center">서울 vs 지방 의료 양극화 보완 </div></td>
+		<td><div align="center">서울 vs 지방 의료 양극화 보완 </div></td>
+		<td><div align="center">서울 vs 지방 의료 양극화 보완 </div></td>
+	</tr>
+	<tr>
+		<td><div align="center"><b>Presentation</b></div></td>
+		<td><div align="center"><img src="images/Front_B.png" height=150 width=200></div></td>
+		<td><div align="center"><img src="images/Front_F.png" width=200 height=150></div></td>
+		<td><div align="center"><img src="images/Front_G.png" width=200 height=150></div></td>
+	</tr>
+</table>
+</div>
+
+
+
+
+```python
+
+```
+
+<hr>
 <marquee><font size=3 color='brown'>The BigpyCraft find the information to design valuable society with Technology & Craft.</font></marquee>
 <div align='right'><font size=2 color='gray'> &lt; The End &gt; </font></div>
