@@ -228,7 +228,7 @@
 	</tr>
 	<tr>
 		<td><div align="center"><b>Subject</b></div></td>
-		<td><div align="left" > 서울시 골목상권 </div></td>
+		<td><div align="left" > 난민에 대한 사회적 인식 분석 및 사회적 불안감 해소 방안 제안 </div></td>
 	</tr>
 	<tr>
 		<td><div align="center"><b>Presentation</b></div></td>
@@ -261,7 +261,7 @@
 	</tr>
 	<tr>
 		<td><div align="center"><b>Subject</b></div></td>
-		<td><div align="left" > 일본 불매운동에 대한 과거와 현재의 온도차 </div></td>
+		<td><div align="left" > 장기화된 일본 불매운동이 가진 의미와 나아 갈 방향 </div></td>
 	</tr>
 	<tr>
 		<td><div align="center"><b>Presentation</b></div></td>
@@ -269,7 +269,6 @@
 	</tr>
 </table>
 </div>
-
 
 ### <font color="indigo">Project Team F </font>
 
@@ -336,165 +335,6 @@
 	</tr>
 </table>
 </div>
-
-
-```python
-
-```
-
-
-```python
-
-```
-
-
-```python
-
-```
-
-<div align=left width=100%>
-<h4>Project Team F </h4>
-<table border=1 width=100%>
-	<tr>
-		<td width="10%"><div align="center"><b>&nbsp;</b></div></td>
-		<td width="30%"><div align="center"> Team A</div></td>
-		<td width="30%"><div align="center"> Team B</div></td>
-		<td width="30%"><div align="center"> Team C</div></td>
-	</tr>
-	<tr>
-		<td><div align="center"><b>Project Team</b></div></td>
-		<td><div align="center">이구아나 팀</div></td>
-		<td><div align="center">이구아나 팀</div></td>
-		<td><div align="center">이구아나 팀</div></td>
-	</tr>
-	<tr>
-		<td><div align="center"><b>Team Members</b></div></td>
-		<td><div align="center"> 김재경<br/> 김수환<br/> 신은영<br/> 이승은 </div></td>
-		<td><div align="center"> 김재경<br/> 김수환<br/> 신은영<br/> 이승은 </div></td>
-		<td><div align="center"> 김재경<br/> 김수환<br/> 신은영<br/> 이승은 </div></td>
-	</tr>
-	<tr>
-		<td><div align="center"><b>Report</b></div></td>
-		<td>
-			<div align="center">
-				<a href="report/SBA19_S1_착수보고서_F팀.pdf">[F팀 착수보고]</a><br/>
-				<a href="report/SBA19_S2_결과보고서_F팀.pdf">[F팀 결과보고]</a><br/> 
-				<a href="report/Team_F/code/">[F팀 소스코드]</a>  
-			</div>
-		</td>
-		<td>
-			<div align="center">
-				<a href="report/SBA19_S1_착수보고서_F팀.pdf">[F팀 착수보고]</a><br/>
-				<a href="report/SBA19_S2_결과보고서_F팀.pdf">[F팀 결과보고]</a><br/> 
-				<a href="report/Team_F/code/">[F팀 소스코드]</a>  
-			</div>
-		</td>
-		<td>
-			<div align="center">
-				<a href="report/SBA19_S1_착수보고서_F팀.pdf">[F팀 착수보고]</a><br/>
-				<a href="report/SBA19_S2_결과보고서_F팀.pdf">[F팀 결과보고]</a><br/> 
-				<a href="report/Team_F/code/">[F팀 소스코드]</a>  
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td><div align="center"><b>Subject</b></div></td>
-		<td><div align="center">서울 vs 지방 의료 양극화 보완 </div></td>
-		<td><div align="center">서울 vs 지방 의료 양극화 보완 </div></td>
-		<td><div align="center">서울 vs 지방 의료 양극화 보완 </div></td>
-	</tr>
-	<tr>
-		<td><div align="center"><b>Presentation</b></div></td>
-		<td><div align="center"><img src="images/Front_B.png" height=150 width=200></div></td>
-		<td><div align="center"><img src="images/Front_F.png" width=200 height=150></div></td>
-		<td><div align="center"><img src="images/Front_G.png" width=200 height=150></div></td>
-	</tr>
-</table>
-</div>
-
-
-
-
-
-<div align=left width=100%>
-<h4>Project Team F </h4>
-<table border=1 width=100%>
-	<tr>
-		<td width="12%"><div align="center"><b>&nbsp;</b></div></td>
-		<td width="22%"><div align="center"> Team A</div></td>
-		<td width="22%"><div align="center"> Team B</div></td>
-		<td width="22%"><div align="center"> Team C</div></td>
-		<td width="22%"><div align="center"> Team C</div></td>
-	</tr>
-	<tr>
-		<td><div align="center"><b>Project Team</b></div></td>
-		<td><div align="center">이구아나 팀</div></td>
-		<td><div align="center">이구아나 팀</div></td>
-		<td><div align="center">이구아나 팀</div></td>
-		<td><div align="center">이구아나 팀</div></td>
-	</tr>
-	<tr>
-		<td><div align="center"><b>Team Members</b></div></td>
-		<td><div align="center"> 김재경<br/> 김수환<br/> 신은영<br/> 이승은 </div></td>
-		<td><div align="center"> 김재경<br/> 김수환<br/> 신은영<br/> 이승은 </div></td>
-		<td><div align="center"> 김재경<br/> 김수환<br/> 신은영<br/> 이승은 </div></td>
-		<td><div align="center"> 김재경<br/> 김수환<br/> 신은영<br/> 이승은 </div></td>
-	</tr>
-	<tr>
-		<td><div align="center"><b>Report</b></div></td>
-		<td>
-			<div align="center">
-				<a href="report/SBA19_S1_착수보고서_F팀.pdf">[F팀 착수보고]</a><br/>
-				<a href="report/SBA19_S2_결과보고서_F팀.pdf">[F팀 결과보고]</a><br/> 
-				<a href="report/Team_F/code/">[F팀 소스코드]</a>  
-			</div>
-		</td>
-		<td>
-			<div align="center">
-				<a href="report/SBA19_S1_착수보고서_F팀.pdf">[F팀 착수보고]</a><br/>
-				<a href="report/SBA19_S2_결과보고서_F팀.pdf">[F팀 결과보고]</a><br/> 
-				<a href="report/Team_F/code/">[F팀 소스코드]</a>  
-			</div>
-		</td>
-		<td>
-			<div align="center">
-				<a href="report/SBA19_S1_착수보고서_F팀.pdf">[F팀 착수보고]</a><br/>
-				<a href="report/SBA19_S2_결과보고서_F팀.pdf">[F팀 결과보고]</a><br/> 
-				<a href="report/Team_F/code/">[F팀 소스코드]</a>  
-			</div>
-		</td>
-		<td>
-			<div align="center">
-				<a href="report/SBA19_S1_착수보고서_F팀.pdf">[F팀 착수보고]</a><br/>
-				<a href="report/SBA19_S2_결과보고서_F팀.pdf">[F팀 결과보고]</a><br/> 
-				<a href="report/Team_F/code/">[F팀 소스코드]</a>  
-			</div>
-		</td>
-	</tr>
-	<tr>
-		<td><div align="center"><b>Subject</b></div></td>
-		<td><div align="center">서울 vs 지방 의료 양극화 보완 </div></td>
-		<td><div align="center">서울 vs 지방 의료 양극화 보완 </div></td>
-		<td><div align="center">서울 vs 지방 의료 양극화 보완 </div></td>
-		<td><div align="center">서울 vs 지방 의료 양극화 보완 </div></td>
-	</tr>
-	<tr>
-		<td><div align="center"><b>Presentation</b></div></td>
-		<td><div align="center"><img src="images/Front_B.png" width=200 height=150></div></td>
-		<td><div align="center"><img src="images/Front_F.png" width=200 height=150></div></td>
-		<td><div align="center"><img src="images/Front_G.png" width=200 height=150></div></td>
-		<td><div align="center"><img src="images/Front_B.png" width=200 height=150></div></td>
-	</tr>
-</table>
-</div>
-
-
-
-
-
-```python
-
-```
 
 <hr>
 <marquee><font size=3 color='brown'>The BigpyCraft find the information to design valuable society with Technology & Craft.</font></marquee>
