@@ -56,7 +56,7 @@
 		<td><div align="center"> <a href="reports/SBA19_S1_착수보고서_A팀.pdf"><img src='images/Team_A_전기차2.jpg' width=200 height=100></a>    </div></td>
 	</tr>
 	<tr>
-		<td><div align="center"> B팀<br/> <b>Fros팀</b>                                                                                          </div></td>
+		<td><div align="center"> B팀<br/> <b>FORS</b>                                                                                          </div></td>
 		<td><div align="left"  > 김태웅, 백서연<br/> 김봉수                                                                                      </div></td>
 		<td><div align="left"  > 유기견 현황 조사 및 분석                                                                                        </div></td>
 		<td><div align="center"> <a href="reports/SBA19_S1_착수보고서_B팀.pdf"><img src='images/Team_B_유기견.jpg'  width=200 height=100></a>    </div></td>
@@ -86,7 +86,7 @@
 		<td><div align="center"> <a href="reports/SBA19_S1_착수보고서_F팀.pdf"><img src='images/Team_F_양극화.png'  width=200 height=100></a>     </div></td>
 	</tr>
 	<tr>
-		<td><div align="center"> G팀<br/> <b>취미요?<br/>파이썬이요</b>                                                                           </div></td>
+		<td><div align="center"> G팀<br/> <b>취미요?<br/>파이썬이요!</b>                                                                           </div></td>
 		<td><div align="left"  > 류경아, 손하늘	<br/> 양한솔                                                                                      </div></td>
 		<td><div align="left"  > 지역 인프라 분석으로 인프라 발전 방안 모색	                                                                      </div></td>
 		<td><div align="center"> <a href="reports/SBA19_S1_착수보고서_G팀.pdf"><img src='images/Team_G_사회인프라.jpg'  width=200 height=100></a> </div></td>
@@ -116,7 +116,7 @@
 	</tr>
 	<tr>
 		<td><div align="center"><b>Team Members</b></div></td>
-		<td><div align="left" > 윤종필, 홍성민, 이찬희, 구교석 </div></td>
+		<td><div align="left" > 윤종필, 홍성민, 이찬희 </div></td>
 	</tr>
 	<tr>
 		<td><div align="center"><b>Report</b></div></td>
@@ -129,7 +129,7 @@
 	</tr>
 	<tr>
 		<td><div align="center"><b>Subject</b></div></td>
-		<td><div align="left" > 전기차 보급확대 방안</div></td>
+		<td><div align="left" > Electric Vehicle, 전기자동차</div></td>
 	</tr>
 	<tr>
 		<td><div align="center"><b>Presentation</b></div></td>
@@ -137,7 +137,6 @@
 	</tr>
 </table>
 </div>
-
 
 ### <font color="orange">Project Team B </font>
 
@@ -188,13 +187,14 @@
 		<td>
 			<div align="left" > 
 				<a href="reports/SBA19_S1_착수보고서_C팀.pdf">[C팀 착수보고]</a>, &nbsp;&nbsp;&nbsp; 
+				<a href="reports/SBA19_S2_결과보고서_C팀.pdf">[C팀 결과보고]</a>, &nbsp;&nbsp;&nbsp; 
 				<a href="reports/Team_C/code/">[C팀 소스코드]</a>  
 			</div>
 		</td>
 	</tr>
 	<tr>
 		<td><div align="center"><b>Subject</b></div></td>
-		<td><div align="left" > 100세 시대의 문제해결방향 </div></td>
+		<td><div align="left" > 고령사회 소비패턴분석 </div></td>
 	</tr>
 	<tr>
 		<td><div align="center"><b>Presentation</b></div></td>
