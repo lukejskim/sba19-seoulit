@@ -94,17 +94,17 @@
 </table>
 </div>
 
-[![Video Label](images/sba19_memorys.jpg)](https://youtu.be/ts2FFGpPqpA) 
-### SBA19 BigData Science !!  Just click on the image above, for looking back on the memories. ^^
-
-<hr>
-
 <hr>
 
 ##  <font color='#00AAAA'>Team Project : Final Report</font>
 - <b>Submission   </b>: 착수보고, 결과보고, 소스코드
 - <b>Presentation </b>: 10min / team, Q&A
 - <b>Keep in mind </b>: <font color='#CC0000'><b> Share Lessons Learned !! </b></font>
+
+[![Video Label](images/sba19_memorys.jpg)](https://youtu.be/G0u2V-en8oA) 
+### SBA19 BigData Science !!  Just click on the image above, for looking back on the memories. ^^
+
+<hr>
 
 ### <font color="red">Project Team A </font>
 
