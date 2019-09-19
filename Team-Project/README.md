@@ -94,10 +94,11 @@
 </table>
 </div>
 
+<hr>
+
 [![Video Label](images/sba19_memorys.jpg)](https://youtu.be/ts2FFGpPqpA) 
 ### SBA19 BigData Science !!  Just click on the image above, for looking back on the memories. ^^
 
-<hr>
 
 <hr>
 
